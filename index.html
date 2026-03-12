@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Index</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 600px; margin: 2rem auto; padding: 0 1rem; }
+        h1 { border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 0.5rem 0; border-bottom: 1px solid #eee; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .error { color: #c00; }
+    </style>
+</head>
+<body>
+    <h1>Pages</h1>
+    <ul id="page-list"><li>Loading...</li></ul>
+
+    <script>
+        (async function() {
+            const list = document.getElementById('page-list');
+
+            // Auto-detect repo from GitHub Pages URL
+            const host = location.hostname;
+            const path = location.pathname.split('/').filter(Boolean);
+
+            let apiUrl;
+            if (host.endsWith('.github.io')) {
+                const user = host.replace('.github.io', '');
+                const repo = path[0] || user + '.github.io';
+                const dir = path.slice(1).join('/');
+                apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${dir}`;
+            } else {
+                list.innerHTML = '<li class="error">Not running on GitHub Pages</li>';
+                return;
+            }
+
+            try {
+                const res = await fetch(apiUrl);
+                if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+
+                const files = await res.json();
+                const pages = files
+                    .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+                    .sort((a, b) => a.name.localeCompare(b.name));
+
+                if (pages.length === 0) {
+                    list.innerHTML = '<li>No pages found</li>';
+                } else {
+                    list.innerHTML = pages
+                        .map(f => `<li><a href="${f.name}">${f.name}</a></li>`)
+                        .join('');
+                }
+            } catch (err) {
+                list.innerHTML = `<li class="error">${err.message}</li>`;
+            }
+        })();
+    </script>
+</body>
+</html>
