@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>狂言と笑い</title>
+<style>
+  body{
+    font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    font-size:20px;
+    line-height:2.35;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  h1{ font-size:26px; margin:0 0 16px 0; }
+  ruby{ ruby-position: over; }
+  rt{ font-size:0.6em; color:#555; }
+  .sentence{ margin: 0 0 16px 0; }
+  .en{
+    display:none;
+    margin-top:6px;
+    font-size:0.9em;
+    color:#333;
+  }
+  button{
+    margin-left:10px;
+    font-size:0.8em;
+    cursor:pointer;
+  }
+  .lineno{
+    font-weight:700;
+    margin-right:8px;
+    color:#444;
+  }
+</style>
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+
+<h1><ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>と<ruby><rb>笑</rb><rt>わら</rt></ruby>い</h1>
+
+<div class="sentence">
+<span class="lineno">1</span>
+<ruby><rb>日本語</rb><rt>にほんご</rt></ruby>では、<ruby><rb>笑</rb><rt>わら</rt></ruby>いは<ruby><rb>様々</rb><rt>さまざま</rt></ruby>な<ruby><rb>表現</rb><rt>ひょうげん</rt></ruby>で<ruby><rb>表</rb><rt>あらわ</rt></ruby>されます。
+<button onclick="toggle('en1')">訳</button>
+<div class="en" id="en1">In Japanese, laughter is expressed in many different ways.</div>
+</div>
+
+<div class="sentence">
+<ruby><rb>例</rb><rt>たと</rt></ruby>えば、<ruby><rb>大声</rb><rt>おおごえ</rt></ruby>で<ruby><rb>笑</rb><rt>わら</rt></ruby>う<ruby><rb>時</rb><rt>とき</rt></ruby>は「ゲラゲラ」<ruby><rb>笑</rb><rt>わら</rt></ruby>い、<ruby><rb>恥</rb><rt>は</rt></ruby>ずかしそうに<ruby><rb>小</rb><rt>ちい</rt></ruby>さい<ruby><rb>声</rb><rt>こえ</rt></ruby>で<ruby><rb>笑</rb><rt>わら</rt></ruby>う<ruby><rb>時</rb><rt>とき</rt></ruby>は「クスクス」<ruby><rb>笑</rb><rt>わら</rt></ruby>います。
+<button onclick="toggle('en2')">訳</button>
+<div class="en" id="en2">For example, when you laugh loudly you “gera-gera” laugh, and when you laugh shyly in a small voice you “kusu-kusu” laugh.</div>
+</div>
+
+<div class="sentence">
+<ruby><rb>他</rb><rt>ほか</rt></ruby>にも「きゃっきゃっ」と<ruby><rb>笑</rb><rt>わら</rt></ruby>ったり、「ワハハ」と<ruby><rb>笑</rb><rt>わら</rt></ruby>ったりしますが、<ruby><rb>皆</rb><rt>みな</rt></ruby>さんは、これらの「<ruby><rb>笑</rb><rt>わら</rt></ruby>い」には<ruby><rb>不思議</rb><rt>ふしぎ</rt></ruby>な<ruby><rb>力</rb><rt>ちから</rt></ruby>があることを<ruby><rb>知</rb><rt>し</rt></ruby>っていますか。
+<button onclick="toggle('en3')">訳</button>
+<div class="en" id="en3">There are also laughs like “kyak-kyak” and “wahaha,” but did you know this “laughter” has a mysterious power?</div>
+</div>
+
+<div class="sentence">
+<ruby><rb>実</rb><rt>じつ</rt></ruby>は、「<ruby><rb>笑</rb><rt>わら</rt></ruby>い」は<ruby><rb>人間</rb><rt>にんげん</rt></ruby>の<ruby><rb>健康</rb><rt>けんこう</rt></ruby>と<ruby><rb>深</rb><rt>ふか</rt></ruby>い<ruby><rb>関係</rb><rt>かんけい</rt></ruby>があり、その<ruby><rb>効果</rb><rt>こうか</rt></ruby>は<ruby><rb>科学的</rb><rt>かがくてき</rt></ruby>にも<ruby><rb>証明</rb><rt>しょうめい</rt></ruby>されているのです。
+<button onclick="toggle('en4')">訳</button>
+<div class="en" id="en4">In fact, “laughter” is deeply connected to human health, and its effects have even been scientifically proven.</div>
+</div>
+
+<div class="sentence">
+<span class="lineno">5</span>
+<ruby><rb>糖尿病</rb><rt>とうにょうびょう</rt></ruby>（diabetes）という<ruby><rb>病気</rb><rt>びょうき</rt></ruby>は、<ruby><rb>血液中</rb><rt>けつえきちゅう</rt></ruby>の<ruby><rb>血糖値</rb><rt>けっとうち</rt></ruby>（blood-sugar level）が<ruby><rb>高</rb><rt>たか</rt></ruby>くなることによって<ruby><rb>起</rb><rt>お</rt></ruby>こる<ruby><rb>病気</rb><rt>びょうき</rt></ruby>ですが、ある<ruby><rb>科学者</rb><rt>かがくしゃ</rt></ruby>が、<ruby><rb>面白</rb><rt>おもしろ</rt></ruby>い<ruby><rb>話</rb><rt>はなし</rt></ruby>を<ruby><rb>聞</rb><rt>き</rt></ruby>かせた<ruby><rb>後</rb><rt>あと</rt></ruby>の<ruby><rb>患者</rb><rt>かんじゃ</rt></ruby>と<ruby><rb>難</rb><rt>むずか</rt></ruby>しい<ruby><rb>講義</rb><rt>こうぎ</rt></ruby>を<ruby><rb>聞</rb><rt>き</rt></ruby>かせた<ruby><rb>後</rb><rt>あと</rt></ruby>の<ruby><rb>患者</rb><rt>かんじゃ</rt></ruby>の<ruby><rb>血糖値</rb><rt>けっとうち</rt></ruby>を<ruby><rb>比</rb><rt>くら</rt></ruby>べるという<ruby><rb>実験</rb><rt>じっけん</rt></ruby>をしてみました。
+<button onclick="toggle('en5')">訳</button>
+<div class="en" id="en5">Diabetes is an illness that occurs when blood-sugar levels in the blood become high, but a scientist tried an experiment comparing patients’ blood-sugar levels after hearing a funny story versus after hearing a difficult lecture.</div>
+</div>
+
+<div class="sentence">
+すると、<ruby><rb>難</rb><rt>むずか</rt></ruby>しい<ruby><rb>講義</rb><rt>こうぎ</rt></ruby>を<ruby><rb>聞</rb><rt>き</rt></ruby>いた<ruby><rb>後</rb><rt>あと</rt></ruby>では<ruby><rb>平均</rb><rt>へいきん</rt></ruby>123ミリグラムも<ruby><rb>上</rb><rt>あ</rt></ruby>がった<ruby><rb>血糖値</rb><rt>けっとうち</rt></ruby>が、<ruby><rb>面白</rb><rt>おもしろ</rt></ruby>い<ruby><rb>話</rb><rt>はなし</rt></ruby>を<ruby><rb>聞</rb><rt>き</rt></ruby>いて<ruby><rb>笑</rb><rt>わら</rt></ruby>った<ruby><rb>後</rb><rt>あと</rt></ruby>では、<ruby><rb>平均</rb><rt>へいきん</rt></ruby>77ミリグラムしか<ruby><rb>上</rb><rt>あ</rt></ruby>がらなかっ<span class="lineno">10</span>たという<ruby><rb>結果</rb><rt>けっか</rt></ruby>が<ruby><rb>出</rb><rt>で</rt></ruby>たそうです。
+<button onclick="toggle('en6')">訳</button>
+<div class="en" id="en6">After a difficult lecture, blood sugar rose by an average of 123 mg, but after hearing a funny story and laughing, it rose by only 77 mg, and that was the reported result.</div>
+</div>
+
+<div class="sentence">
+また、<ruby><rb>血液</rb><rt>けつえき</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>には、キラー<ruby><rb>細胞</rb><rt>さいぼう</rt></ruby>（natural killer cells）と<ruby><rb>呼</rb><rt>よ</rt></ruby>ばれるユニークな<ruby><rb>名前</rb><rt>なまえ</rt></ruby>の<ruby><rb>細胞</rb><rt>さいぼう</rt></ruby>があります。
+<button onclick="toggle('en7')">訳</button>
+<div class="en" id="en7">Also, in the blood there are cells with the unique name “killer cells” (natural killer cells).</div>
+</div>
+
+<div class="sentence">
+この<ruby><rb>細胞</rb><rt>さいぼう</rt></ruby>は<ruby><rb>名前</rb><rt>なまえ</rt></ruby>の<ruby><rb>通</rb><rt>とお</rt></ruby>り、ウイルスや<ruby><rb>癌</rb><rt>がん</rt></ruby><ruby><rb>細胞</rb><rt>さいぼう</rt></ruby>を<ruby><rb>壊</rb><rt>こわ</rt></ruby>す<ruby><rb>力</rb><rt>ちから</rt></ruby>を<ruby><rb>持</rb><rt>も</rt></ruby>っていて、キラー<ruby><rb>細胞</rb><rt>さいぼう</rt></ruby>が<ruby><rb>増</rb><rt>ふ</rt></ruby>えれば<ruby><rb>増</rb><rt>ふ</rt></ruby>えるほど、<ruby><rb>多</rb><rt>おお</rt></ruby>くの<ruby><rb>悪</rb><rt>わる</rt></ruby>い<ruby><rb>細胞</rb><rt>さいぼう</rt></ruby>が<ruby><rb>減</rb><rt>へ</rt></ruby>るのですが、「<ruby><rb>笑</rb><rt>わら</rt></ruby>い」にはこのキラー<ruby><rb>細胞</rb><rt>さいぼう</rt></ruby>を<ruby><rb>増</rb><rt>ふ</rt></ruby>やす<ruby><rb>効果</rb><rt>こうか</rt></ruby>があるということも<ruby><rb>分</rb><rt>わ</rt></ruby>かりました。
+<button onclick="toggle('en8')">訳</button>
+<div class="en" id="en8">As the name suggests, these cells can destroy viruses and cancer cells; the more killer cells increase, the more bad cells decrease—and it was also found that “laughter” increases these killer cells.</div>
+</div>
+
+<div class="sentence">
+<span class="lineno">15</span>
+さて、<ruby><rb>人間</rb><rt>にんげん</rt></ruby>の<ruby><rb>健康</rb><rt>けんこう</rt></ruby>にとって<ruby><rb>大切</rb><rt>たいせつ</rt></ruby>な<ruby><rb>行為</rb><rt>こうい</rt></ruby>である「<ruby><rb>笑</rb><rt>わら</rt></ruby>い」、これを<ruby><rb>取</rb><rt>と</rt></ruby>り<ruby><rb>入</rb><rt>い</rt></ruby>れた<ruby><rb>日本</rb><rt>にほん</rt></ruby>の<ruby><rb>伝統</rb><rt>でんとう</rt></ruby><ruby><rb>芸能</rb><rt>げいのう</rt></ruby>と<ruby><rb>言</rb><rt>い</rt></ruby>えば、<ruby><rb>一番</rb><rt>いちばん</rt></ruby>に「<ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>」が<ruby><rb>挙</rb><rt>あ</rt></ruby>げられます。
+<button onclick="toggle('en9')">訳</button>
+<div class="en" id="en9">Now then, speaking of a traditional Japanese performing art that incorporates “laughter,” which is important for human health, first “Kyogen” is often mentioned.</div>
+</div>
+
+<div class="sentence">
+<ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>というのは、<ruby><rb>歌</rb><rt>うた</rt></ruby>や<ruby><rb>踊</rb><rt>おど</rt></ruby>りがあまり<ruby><rb>出</rb><rt>で</rt></ruby>てこない、<ruby><rb>言葉</rb><rt>ことば</rt></ruby>を<ruby><rb>中心</rb><rt>ちゅうしん</rt></ruby>とした<ruby><rb>劇</rb><rt>げき</rt></ruby>で、14<ruby><rb>世紀</rb><rt>せいき</rt></ruby><ruby><rb>頃</rb><rt>ごろ</rt></ruby>に<ruby><rb>劇</rb><rt>げき</rt></ruby>の<ruby><rb>形</rb><rt>かたち</rt></ruby>が<ruby><rb>完成</rb><rt>かんせい</rt></ruby>しました。
+<button onclick="toggle('en10')">訳</button>
+<div class="en" id="en10">Kyogen is a play centered on spoken words with little singing or dancing, and its form was completed around the 14th century.</div>
+</div>
+
+<div class="sentence">
+<ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>には、<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>と<ruby><rb>家来</rb><rt>けらい</rt></ruby>、<ruby><rb>親</rb><rt>おや</rt></ruby>と<ruby><rb>子</rb><rt>こ</rt></ruby>、<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>など<ruby><rb>色々</rb><rt>いろいろ</rt></ruby>な<ruby><rb>人物</rb><rt>じんぶつ</rt></ruby>が<ruby><rb>登場</rb><rt>とうじょう</rt></ruby>しますが、どの<ruby><rb>人物</rb><rt>じんぶつ</rt></ruby>もどこにでもいる<ruby><rb>普通</rb><rt>ふつう</rt></ruby>の<ruby><rb>人達</rb><rt>ひとたち</rt></ruby>ばかりで、スーパーマンのような<ruby><rb>超人的</rb><rt>ちょうじんてき</rt></ruby>なヒーローは<ruby><rb>出</rb><rt>で</rt></ruby>てきません。
+<button onclick="toggle('en11')">訳</button>
+<div class="en" id="en11">In “Kyogen,” various characters appear—masters and servants, parents and children, yamabushi, etc.—but they’re all ordinary people you could find anywhere; superhuman heroes like Superman do not appear.</div>
+</div>
+
+<div class="sentence">
+また、<ruby><rb>悲劇</rb><rt>ひげき</rt></ruby>の<ruby><rb>主人公</rb><rt>しゅじんこう</rt></ruby>のような<ruby><rb>人物</rb><rt>じんぶつ</rt></ruby>も<ruby><rb>出</rb><rt>で</rt></ruby>てきませ<span class="lineno">20</span>ん。
+<button onclick="toggle('en12')">訳</button>
+<div class="en" id="en12">Also, characters like tragic protagonists do not appear.</div>
+</div>
+
+<div class="sentence">
+この<ruby><rb>普通</rb><rt>ふつう</rt></ruby>の<ruby><rb>人達</rb><rt>ひとたち</rt></ruby>が、<ruby><rb>失敗</rb><rt>しっぱい</rt></ruby>したり、うそをついたり、<ruby><rb>困</rb><rt>こま</rt></ruby>ったりする<ruby><rb>様子</rb><rt>ようす</rt></ruby>を、<ruby><rb>言葉</rb><rt>ことば</rt></ruby>や<ruby><rb>動作</rb><rt>どうさ</rt></ruby>でユーモラスに<ruby><rb>表現</rb><rt>ひょうげん</rt></ruby>しているのが<ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>です。
+<button onclick="toggle('en13')">訳</button>
+<div class="en" id="en13">Kyogen humorously portrays these ordinary people’s actions—failing, lying, and getting into trouble—through words and movement.</div>
+</div>
+
+<div class="sentence">
+また、<ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>には、<ruby><rb>話</rb><rt>はなし</rt></ruby>の<ruby><rb>途中</rb><rt>とちゅう</rt></ruby>で<ruby><rb>強</rb><rt>つよ</rt></ruby>い<ruby><rb>人</rb><rt>ひと</rt></ruby>と<ruby><rb>弱</rb><rt>よわ</rt></ruby>い<ruby><rb>人</rb><rt>ひと</rt></ruby>の<ruby><rb>立場</rb><rt>たちば</rt></ruby>が<ruby><rb>逆</rb><rt>ぎゃく</rt></ruby>になってしまうという<ruby><rb>風刺的</rb><rt>ふうしてき</rt></ruby>な<ruby><rb>面白</rb><rt>おもしろ</rt></ruby>さもあります。
+<button onclick="toggle('en14')">訳</button>
+<div class="en" id="en14">Also, in “Kyogen,” there is satirical humor where the positions of the strong and the weak reverse during the story.</div>
+</div>
+
+<div class="sentence">
+<ruby><rb>例</rb><rt>たと</rt></ruby>えば、「<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>」は<ruby><rb>自分</rb><rt>じぶん</rt></ruby>の「<ruby><rb>家来</rb><rt>けらい</rt></ruby>」に<ruby><rb>簡単</rb><rt>かんたん</rt></ruby>にだまされてしまいますし、<ruby><rb>偉</rb><rt>えら</rt></ruby>そうにしていた「<ruby><rb>親</rb><rt>おや</rt></ruby>」が「<ruby><rb>子供</rb><rt>こども</rt></ruby>」にからかわれたり、<ruby><rb>超人的</rb><rt>ちょうじんてき</rt></ruby>な<ruby><rb>力</rb><rt>ちから</rt></ruby>を<ruby><rb>持</rb><rt>も</rt></ruby>っているはずの<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>が<ruby><rb>実際</rb><rt>じっさい</rt></ruby>は<span class="lineno">25</span><ruby><rb>無力</rb><rt>むりょく</rt></ruby>で<ruby><rb>弱</rb><rt>よわ</rt></ruby>かったりするという<ruby><rb>話</rb><rt>はなし</rt></ruby>がよく<ruby><rb>出</rb><rt>で</rt></ruby>てきます。
+<button onclick="toggle('en15')">訳</button>
+<div class="en" id="en15">For example, the “master” is easily tricked by his “servant,” a parent who was acting important gets teased by a “child,” and a yamabushi who is supposed to have superhuman power is actually powerless and weak—stories like this often come up.</div>
+</div>
+
+</body>
+</html>

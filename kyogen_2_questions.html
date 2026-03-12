@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>kyogen_2_questions</title>
+<style>
+  body{
+    font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    font-size:20px;
+    line-height:2.35;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  ruby{ ruby-position: over; }
+  rt{ font-size:0.6em; color:#555; }
+  .sentence{ margin: 0 0 16px 0; }
+  .en{
+    display:none;
+    margin-top:6px;
+    font-size:0.9em;
+    color:#333;
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .romaji {
+    color: #0056b3;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  button{
+    margin-left:10px;
+    font-size:0.8em;
+    cursor:pointer;
+  }
+  .lineno{
+    font-weight:700;
+    margin-right:8px;
+    color:#444;
+  }
+</style>
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+
+<div class="sentence">
+<span class="lineno">5.</span>
+<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>は<ruby><rb>出</rb><rt>で</rt></ruby>かける<ruby><rb>時</rb><rt>とき</rt></ruby>に、<ruby><rb>二人</rb><rt>ふたり</rt></ruby>の<ruby><rb>家来</rb><rt>けらい</rt></ruby>に<ruby><rb>何</rb><rt>なに</rt></ruby>をしてはいけないと<ruby><rb>言</rb><rt>い</rt></ruby>って<ruby><rb>出</rb><rt>で</rt></ruby>かけましたか。
+<button onclick="toggle('en5')">訳</button>
+<div class="en" id="en5">
+  <div class="romaji">Shujin wa dekakeru toki ni, futari no kerai ni nani o shite wa ikenai to itte dekakemashita ka.</div>
+  <div>When the master went out, what did he tell his two servants they must not do?</div>
+</div>
+</div>
+
+<div class="sentence">
+<span class="lineno">6.</span>
+<ruby><rb>二人</rb><rt>ふたり</rt></ruby>の<ruby><rb>家来</rb><rt>けらい</rt></ruby>は、<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>が<ruby><rb>出</rb><rt>で</rt></ruby>かけた<ruby><rb>後</rb><rt>あと</rt></ruby>、<ruby><rb>何</rb><rt>なに</rt></ruby>を<ruby><rb>見</rb><rt>み</rt></ruby>てしまいましたか。<ruby><rb>二人</rb><rt>ふたり</rt></ruby>は<ruby><rb>見</rb><rt>み</rt></ruby>たものをどうしましたか。
+<button onclick="toggle('en6')">訳</button>
+<div class="en" id="en6">
+  <div class="romaji">Futari no kerai wa, shujin ga dekaketa ato, nani o mite shimaimashita ka. Futari wa mita mono o dō shimashita ka.</div>
+  <div>What did the two servants end up seeing after the master went out? What did the two do with what they saw?</div>
+</div>
+</div>
+
+<div class="sentence">
+<span class="lineno">7.</span>
+<ruby><rb>二人</rb><rt>ふたり</rt></ruby>はその<ruby><rb>後</rb><rt>あと</rt></ruby>、<ruby><rb>何</rb><rt>なに</rt></ruby>をしましたか。なぜそんなことをしたと<ruby><rb>思</rb><rt>おも</rt></ruby>いますか。
+<button onclick="toggle('en7')">訳</button>
+<div class="en" id="en7">
+  <div class="romaji">Futari wa sono ato, nani o shimashita ka. Naze sonna koto o shita to omoimasu ka.</div>
+  <div>What did the two do after that? Why do you think they did such a thing?</div>
+</div>
+</div>
+
+<div class="sentence">
+<span class="lineno">8.</span>
+<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>が<ruby><rb>帰</rb><rt>かえ</rt></ruby>って<ruby><rb>来</rb><rt>き</rt></ruby>てから、<ruby><rb>家来達</rb><rt>けらいたち</rt></ruby>は<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>に<ruby><rb>何</rb><rt>なん</rt></ruby>と<ruby><rb>言</rb><rt>い</rt></ruby>いましたか。
+<button onclick="toggle('en8')">訳</button>
+<div class="en" id="en8">
+  <div class="romaji">Shujin ga kaette kite kara, keraitachi wa shujin ni nan to iimashita ka.</div>
+  <div>After the master returned, what did the servants say to him?</div>
+</div>
+</div>
+
+<div class="sentence">
+<span class="lineno">9.</span>
+<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>は、なぜ<ruby><rb>家</rb><rt>いえ</rt></ruby>を<ruby><rb>出</rb><rt>で</rt></ruby>る<ruby><rb>時</rb><rt>とき</rt></ruby>、<ruby><rb>家来達</rb><rt>けらいたち</rt></ruby>にうそをついたと<ruby><rb>思</rb><rt>おも</rt></ruby>いますか。
+<button onclick="toggle('en9')">訳</button>
+<div class="en" id="en9">
+  <div class="romaji">Shujin wa, naze ie o deru toki, keraitachi ni uso o tsuita to omoimasu ka.</div>
+  <div>Why do you think the master lied to the servants when he left the house?</div>
+</div>
+</div>
+
+<div class="sentence">
+<span class="lineno">10.</span>
+この<ruby><rb>話</rb><rt>はなし</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>で<ruby><rb>本当</rb><rt>ほんとう</rt></ruby>にだまされた<ruby><rb>人</rb><rt>ひと</rt></ruby>は<ruby><rb>誰</rb><rt>だれ</rt></ruby>だったと<ruby><rb>思</rb><rt>おも</rt></ruby>いますか。どんな<ruby><rb>点</rb><rt>てん</rt></ruby>が<ruby><rb>風刺的</rb><rt>ふうしてき</rt></ruby>だと<ruby><rb>思</rb><rt>おも</rt></ruby>いますか。
+<button onclick="toggle('en10')">訳</button>
+<div class="en" id="en10">
+  <div class="romaji">Kono hanashi no naka de hontō ni damasareta hito wa dare datta to omoimasu ka. Donna ten ga fūshiteki da to omoimasu ka.</div>
+  <div>Who do you think was the person truly deceived in this story? What points do you think are satirical?</div>
+</div>
+</div>
+
+</body>
+</html>
