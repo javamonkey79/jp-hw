@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>kusabira no kyogen no kaiwa</title>
+<style>
+  body{
+    font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    font-size:20px;
+    line-height:2.35;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  h2 { font-size: 22px; margin-top: 40px; border-bottom: 2px solid #ccc; padding-bottom: 8px; }
+  ruby{ ruby-position: over; }
+  rt{ font-size:0.6em; color:#555; }
+  .sentence{ margin: 0 0 16px 0; display: flex; align-items: flex-start; }
+  .content { flex: 1; }
+  .en{
+    display:none;
+    margin-top:6px;
+    font-size:0.9em;
+    color:#333;
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .romaji {
+    color: #0056b3;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  button{
+    margin-left:10px;
+    font-size:0.8em;
+    cursor:pointer;
+    height: 30px;
+    margin-top: 8px;
+  }
+  .lineno{
+    font-weight:700;
+    width: 30px;
+    flex-shrink: 0;
+    color:#888;
+    font-size: 0.8em;
+    margin-top: 8px;
+  }
+  .speaker {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  .header-box {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+</style>
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+
+<h2>会話文</h2>
+
+<div class="header-box">
+  <div class="sentence">
+    <div class="lineno">1</div>
+    <div class="content">
+      会話文　<ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>の「くさびら」という<ruby><rb>話</rb><rt>はなし</rt></ruby>について<ruby><rb>勇太</rb><rt>ゆうた</rt></ruby>がモニカに<ruby><rb>話</rb><rt>はな</rt></ruby>す。
+      <button onclick="toggle('c0')">訳</button>
+      <div class="en" id="c0">
+        <div class="romaji">Kaiwabun: Kyōgen no "Kusabira" to iu hanashi ni tsuite Yūta ga Monika ni hanasu.</div>
+        <div>Conversation Text: Yuta talks to Monica about the Kyogen story called "Kusabira".</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span><ruby><rb>勇太君</rb><rt>ゆうたくん</rt></ruby>、<ruby><rb>何見</rb><rt>なにみ</rt></ruby>てるの？
+    <button onclick="toggle('c1')">訳</button>
+    <div class="en" id="c1">
+      <div class="romaji">Monika: Yūta-kun, nani miteru no?</div>
+      <div>Monica: Yuta, what are you looking at?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>あ、モニカ。これ、「<ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>」の<ruby><rb>写真集</rb><rt>しゃしんしゅう</rt></ruby>。
+    <button onclick="toggle('c2')">訳</button>
+    <div class="en" id="c2">
+      <div class="romaji">Yūta: A, Monika. Kore, "Kyōgen" no shashinshū.</div>
+      <div>Yuta: Oh, Monica. This is a photo book of "Kyogen".</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">5</div>
+  <div class="content">
+    <span class="speaker">モニカ：</span><ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>って、<ruby><rb>日本</rb><rt>にほん</rt></ruby>の<ruby><rb>伝統芸能</rb><rt>でんとうげいのう</rt></ruby>の？
+    <button onclick="toggle('c3')">訳</button>
+    <div class="en" id="c3">
+      <div class="romaji">Monika: Kyōgen te, Nihon no dentō geinō no?</div>
+      <div>Monica: Kyogen, as in the traditional Japanese performing art?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>うん。
+    <button onclick="toggle('c4')">訳</button>
+    <div class="en" id="c4">
+      <div class="romaji">Yūta: Un.</div>
+      <div>Yuta: Yeah.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span><ruby><rb>狂言</rb><rt>きょうげん</rt></ruby>って、<ruby><rb>確</rb><rt>たし</rt></ruby>か<ruby><rb>日本</rb><rt>にほん</rt></ruby>の<ruby><rb>昔</rb><rt>むかし</rt></ruby>のコメディなんだよね。
+    <button onclick="toggle('c5')">訳</button>
+    <div class="en" id="c5">
+      <div class="romaji">Monika: Kyōgen te, tashika Nihon no mukashi no komedi nanda yo ne.</div>
+      <div>Monica: Kyogen is, if I recall, an old Japanese comedy, right?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>うーん。<ruby><rb>確</rb><rt>たし</rt></ruby>かに<ruby><rb>喜劇</rb><rt>きげき</rt></ruby>なんだけど、でもちょっと<ruby><rb>違</rb><rt>ちが</rt></ruby>うような<ruby><rb>気</rb><rt>き</rt></ruby>もするんだ。
+    <button onclick="toggle('c6')">訳</button>
+    <div class="en" id="c6">
+      <div class="romaji">Yūta: Uun. Tashika ni kigeki nan dakedo, demo chotto chigau yō na ki mo suru nda.</div>
+      <div>Yuta: Hmm. It's certainly a comedy, but I also feel like it's a little different.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">10</div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>ふうん。でも、<ruby><rb>笑</rb><rt>わら</rt></ruby>える<ruby><rb>話</rb><rt>はなし</rt></ruby>なんでしょ。
+    <button onclick="toggle('c7')">訳</button>
+    <div class="en" id="c7">
+      <div class="romaji">Monika: Fūn. Demo, waraeru hanashi nan desho.</div>
+      <div>Monica: Hmm. But it's a funny story, right?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>うん。<ruby><rb>笑</rb><rt>わら</rt></ruby>えることは<ruby><rb>笑</rb><rt>わら</rt></ruby>えるんだけど、その<ruby><rb>笑</rb><rt>わら</rt></ruby>いに<ruby><rb>深</rb><rt>ふか</rt></ruby>さがあるような<ruby><rb>気</rb><rt>き</rt></ruby>がするんだよ。
+    <button onclick="toggle('c8')">訳</button>
+    <div class="en" id="c8">
+      <div class="romaji">Yūta: Un. Waraeru koto wa waraeru ndakedo, sono warai ni fukasa ga aru yō na ki ga suru nda yo.</div>
+      <div>Yuta: Yeah. It's funny, but I feel like there's depth to that laughter.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>ふうん。<ruby><rb>深</rb><rt>ふか</rt></ruby>さのある<ruby><rb>笑</rb><rt>わら</rt></ruby>い？
+    <button onclick="toggle('c9')">訳</button>
+    <div class="en" id="c9">
+      <div class="romaji">Monika: Fūn. Fukasa no aru warai?</div>
+      <div>Monica: Hmm. Laughter with depth?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>うん、<ruby><rb>例</rb><rt>たと</rt></ruby>えば、この<ruby><rb>写真</rb><rt>しゃしん</rt></ruby>の「くさびら」っていう<ruby><rb>話</rb><rt>はなし</rt></ruby>、<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>ときのこの<ruby><rb>話</rb><rt>はなし</rt></ruby>なんだけど。
+    <button onclick="toggle('c10')">訳</button>
+    <div class="en" id="c10">
+      <div class="romaji">Yūta: Un, tatoeba, kono shashin no "Kusabira" tte iu hanashi, yamabushi to kinoko no hanashi nan dakedo.</div>
+      <div>Yuta: Yeah, for example, this story called "Kusabira" in this photo; it's a story about a yamabushi (mountain ascetic) and mushrooms.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">15</div>
+  <div class="content">
+    <span class="speaker">モニカ：</span><ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>って？
+    <button onclick="toggle('c11')">訳</button>
+    <div class="en" id="c11">
+      <div class="romaji">Monika: Yamabushi tte?</div>
+      <div>Monica: What's a yamabushi?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span><ruby><rb>簡単</rb><rt>かんたん</rt></ruby>に<ruby><rb>言</rb><rt>い</rt></ruby>うと、<ruby><rb>山</rb><rt>やま</rt></ruby>で<ruby><rb>仏教</rb><rt>ぶっきょう</rt></ruby>の<ruby><rb>修行</rb><rt>しゅぎょう</rt></ruby>をしている<ruby><rb>人</rb><rt>ひと</rt></ruby>。その<ruby><rb>修行</rb><rt>しゅぎょう</rt></ruby>のおかげで、スーパーマンみたいな<ruby><rb>力</rb><rt>ちから</rt></ruby>を<ruby><rb>持</rb><rt>も</rt></ruby>っていると<ruby><rb>考</rb><rt>かんが</rt></ruby>えられているんだ。
+    <button onclick="toggle('c12')">訳</button>
+    <div class="en" id="c12">
+      <div class="romaji">Yūta: Kantan ni iu to, yama de bukkyō no shugyō o shite iru hito. Sono shugyō no okage de, sūpāman mitai na chikara o motte iru to kangaerarete iru nda.</div>
+      <div>Yuta: Simply put, a person doing Buddhist training in the mountains. Thanks to that training, they are thought to have Superman-like powers.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>へえ。で、それはどんな<ruby><rb>話</rb><rt>はなし</rt></ruby>なの？
+    <button onclick="toggle('c13')">訳</button>
+    <div class="en" id="c13">
+      <div class="romaji">Monika: Hee. De, sore wa donna hanashi nano?</div>
+      <div>Monica: Wow. So, what kind of story is it?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>うん、<ruby><rb>家</rb><rt>いえ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>に、きのこがどんどん<ruby><rb>生</rb><rt>は</rt></ruby>え<ruby><rb>出</rb><rt>だ</rt></ruby>して<ruby><rb>困</rb><rt>こま</rt></ruby>った<ruby><rb>村人</rb><rt>むらびと</rt></ruby>が、<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>に<ruby><rb>助</rb><rt>たす</rt></ruby>けて<ruby><rb>下</rb><rt>くだ</rt></ruby>さいって<ruby><rb>頼</rb><rt>たの</rt></ruby>みに<ruby><rb>行</rb><rt>い</rt></ruby>くんだ。
+    <button onclick="toggle('c14')">訳</button>
+    <div class="en" id="c14">
+      <div class="romaji">Yūta: Un, ie no naka ni, kinoko ga dondon haedashite komatta murabito ga, yamabushi ni tasukete kudasai tte tanomi ni iku nda.</div>
+      <div>Yuta: Yeah, a villager gets in trouble when mushrooms start sprouting up more and more inside his house, and goes to the yamabushi to ask for help.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">20</div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>ふうん、それで？
+    <button onclick="toggle('c15')">訳</button>
+    <div class="en" id="c15">
+      <div class="romaji">Monika: Fūn, sore de?</div>
+      <div>Monica: Hmm, and then?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>それで、その<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>が<ruby><rb>自分</rb><rt>じぶん</rt></ruby>の<ruby><rb>祈</rb><rt>いの</rt></ruby>りの<ruby><rb>力</rb><rt>ちから</rt></ruby>できのこを<ruby><rb>消</rb><rt>け</rt></ruby>そうとするんだけど、<ruby><rb>祈</rb><rt>いの</rt></ruby>れば<ruby><rb>祈</rb><rt>いの</rt></ruby>るほど、きのこが<ruby><rb>増</rb><rt>ふ</rt></ruby>えちゃうんだよ。
+    <button onclick="toggle('c16')">訳</button>
+    <div class="en" id="c16">
+      <div class="romaji">Yūta: Sore de, sono yamabushi ga jibun no inori no chikara de kinoko o kesō to suru ndakedo, inoreba inoru hodo, kinoko ga fuechau nda yo.</div>
+      <div>Yuta: Then, the yamabushi tries to make the mushrooms disappear with the power of his prayers, but the more he prays, the more the mushrooms multiply.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>え〜。それじゃ、<ruby><rb>逆</rb><rt>ぎゃく</rt></ruby>じゃない…。
+    <button onclick="toggle('c17')">訳</button>
+    <div class="en" id="c17">
+      <div class="romaji">Monika: E~. Sore ja, gyaku ja nai...</div>
+      <div>Monica: Eh~. Then isn't that the opposite...</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>そうなんだよ。で、<ruby><rb>最後</rb><rt>さいご</rt></ruby>は、<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>が<ruby><rb>自分</rb><rt>じぶん</rt></ruby>の<ruby><rb>祈</rb><rt>いの</rt></ruby>りのせいでもっと<ruby><rb>増</rb><rt>ふ</rt></ruby>えちゃったきのこ<ruby><rb>達</rb><rt>たち</rt></ruby>に<ruby><rb>追</rb><rt>お</rt></ruby>いかけられて、<ruby><rb>逃</rb><rt>に</rt></ruby>げ<ruby><rb>出</rb><rt>だ</rt></ruby>しちゃうっていう<ruby><rb>話</rb><rt>はなし</rt></ruby>。
+    <button onclick="toggle('c18')">訳</button>
+    <div class="en" id="c18">
+      <div class="romaji">Yūta: Sō nanda yo. De, saigo wa, yamabushi ga jibun no inori no sei de motto fuechatta kinokotachi ni oikakerarete, nigedashichau tte iu hanashi.</div>
+      <div>Yuta: That's right. And in the end, it's a story where the yamabushi is chased by the mushrooms that multiplied because of his own prayers, and he runs away.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">25</div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>えっ、きのこが<ruby><rb>追</rb><rt>お</rt></ruby>いかけるの？
+    <button onclick="toggle('c19')">訳</button>
+    <div class="en" id="c19">
+      <div class="romaji">Monika: E', kinoko ga oikakeru no?</div>
+      <div>Monica: Eh, the mushrooms chase him?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>そうなんだよ。このきのこは、<ruby><rb>実</rb><rt>じつ</rt></ruby>は、<ruby><rb>普通</rb><rt>ふつう</rt></ruby>のきのこじゃなくて、<ruby><rb>目</rb><rt>め</rt></ruby>とか<ruby><rb>鼻</rb><rt>はな</rt></ruby>とか<ruby><rb>手足</rb><rt>てあし</rt></ruby>まであるんだ。
+    <button onclick="toggle('c20')">訳</button>
+    <div class="en" id="c20">
+      <div class="romaji">Yūta: Sō nanda yo. Kono kinoko wa, jitsu wa, futsū no kinoko janakute, me toka hana toka teashi made aru nda.</div>
+      <div>Yuta: That's right. These mushrooms, actually, aren't normal mushrooms; they even have eyes, noses, and limbs.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>わあ〜。SFみたいだね。
+    <button onclick="toggle('c21')">訳</button>
+    <div class="en" id="c21">
+      <div class="romaji">Monika: Waa~. Esu-efu mitai da ne.</div>
+      <div>Monica: Wow~. It's like sci-fi.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">30</div>
+  <div class="content">
+    <span class="speaker">勇太：</span>うん。<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>の<ruby><rb>祈</rb><rt>いの</rt></ruby>っている<ruby><rb>様子</rb><rt>ようす</rt></ruby>とか、<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>が<ruby><rb>祈</rb><rt>いの</rt></ruby>るたびにますます<ruby><rb>増</rb><rt>ふ</rt></ruby>えてしまうきのこか、きのこに<ruby><rb>追</rb><rt>お</rt></ruby>いかけられて<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>が<ruby><rb>逃</rb><rt>に</rt></ruby>げ<ruby><rb>出</rb><rt>だ</rt></ruby>す<ruby><rb>場面</rb><rt>ばめん</rt></ruby>とか、すっごく<ruby><rb>面白</rb><rt>おもしろ</rt></ruby>くて<ruby><rb>笑</rb><rt>わら</rt></ruby>えるんだ。
+    <button onclick="toggle('c22')">訳</button>
+    <div class="en" id="c22">
+      <div class="romaji">Yūta: Un. Yamabushi no inotte iru yōsu toka, yamabushi ga inoru tabi ni masumasu fuete shimau kinoko ka, kinoko ni oikakerarete yamabushi ga nigedasu bamen toka, suggoku omoshirokute waraeru nda.</div>
+      <div>Yuta: Yeah. The way the yamabushi prays, the mushrooms that multiply more and more every time he prays, the scene where the yamabushi runs away chased by mushrooms... it's really funny and makes you laugh.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>ほんと、<ruby><rb>面白</rb><rt>おもしろ</rt></ruby>そう。
+    <button onclick="toggle('c23')">訳</button>
+    <div class="en" id="c23">
+      <div class="romaji">Monika: Honto, omoshirosō.</div>
+      <div>Monica: Really, it sounds interesting.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>でも、よく<ruby><rb>考</rb><rt>かんが</rt></ruby>えたら、<ruby><rb>自信満々</rb><rt>じしんまんまん</rt></ruby>だったのに<ruby><rb>失敗</rb><rt>しっぱい</rt></ruby>した<ruby><rb>山伏</rb><rt>やまぶし</rt></ruby>がかわいそうになっちゃって。
+    <button onclick="toggle('c24')">訳</button>
+    <div class="en" id="c24">
+      <div class="romaji">Yūta: Demo, yoku kangaetara, jishin manman datta noni shippai shita yamabushi ga kawaisō ni nachatte.</div>
+      <div>Yuta: But, thinking about it carefully, I ended up feeling sorry for the yamabushi who failed even though he was full of confidence.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">35</div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>そうねえ。
+    <button onclick="toggle('c25')">訳</button>
+    <div class="en" id="c25">
+      <div class="romaji">Monika: Sō ne.</div>
+      <div>Monica: Yeah, I see.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span><ruby><rb>自分</rb><rt>じぶん</rt></ruby>に<ruby><rb>自信</rb><rt>じしん</rt></ruby>を<ruby><rb>持</rb><rt>も</rt></ruby>つことも<ruby><rb>大切</rb><rt>たいせつ</rt></ruby>だと<ruby><rb>思</rb><rt>おも</rt></ruby>うけど、<ruby><rb>自分</rb><rt>じぶん</rt></ruby>の<ruby><rb>本当</rb><rt>ほんとう</rt></ruby>の<ruby><rb>力</rb><rt>ちから</rt></ruby>を<ruby><rb>知</rb><rt>し</rt></ruby>ることも<ruby><rb>大切</rb><rt>たいせつ</rt></ruby>だなって、<ruby><rb>結構</rb><rt>けっこう</rt></ruby>、<ruby><rb>考</rb><rt>かんが</rt></ruby>えさせられちゃった。
+    <button onclick="toggle('c26')">訳</button>
+    <div class="en" id="c26">
+      <div class="romaji">Yūta: Jibun ni jishin o motsu koto mo taisetsu da to omou kedo, jibun no hontō no chikara o shiru koto mo taisetsu da na tte, kekkō, kangaesaserarechatta.</div>
+      <div>Yuta: I think it's important to have confidence in yourself, but it also made me think quite a bit that it's important to know your own true strength.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>うーん。<ruby><rb>話</rb><rt>はなし</rt></ruby>を<ruby><rb>聞</rb><rt>き</rt></ruby>いてたら、<ruby><rb>私</rb><rt>わたし</rt></ruby>も<ruby><rb>観</rb><rt>み</rt></ruby>たくなってきちゃった。
+    <button onclick="toggle('c27')">訳</button>
+    <div class="en" id="c27">
+      <div class="romaji">Monika: Uun. Hanashi o kiitetara, watashi mo mitaku natte kichatta.</div>
+      <div>Monica: Hmm. Hearing the story made me want to watch it too.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>うん、ぜひ、<ruby><rb>観</rb><rt>み</rt></ruby>てみたらいいよ。DVDがあるはずだから。
+    <button onclick="toggle('c28')">訳</button>
+    <div class="en" id="c28">
+      <div class="romaji">Yūta: Un, zehi, mite mitara ii yo. Dī-bui-dī ga aru hazu dakara.</div>
+      <div>Yuta: Yeah, by all means, you should watch it. There should be a DVD.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">モニカ：</span>そうね。<ruby><rb>探</rb><rt>さが</rt></ruby>してみる。ありがとう。
+    <button onclick="toggle('c29')">訳</button>
+    <div class="en" id="c29">
+      <div class="romaji">Monika: Sō ne. Sagashite miru. Arigatō.</div>
+      <div>Monica: Yeah. I'll try looking for it. Thanks.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
