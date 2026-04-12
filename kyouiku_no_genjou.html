@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>日本の教育の現状</title>
+<style>
+  body{
+    font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    font-size:20px;
+    line-height:2.35;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  h1{ font-size:26px; margin:0 0 24px 0; border-bottom: 2px solid #ccc; padding-bottom: 8px; }
+  ruby{ ruby-position: over; }
+  rt{ font-size:0.6em; color:#555; }
+  .sentence{ margin: 0 0 16px 0; display: flex; align-items: flex-start; }
+  .content { flex: 1; }
+  .en{
+    display:none;
+    margin-top:6px;
+    font-size:0.9em;
+    color:#333;
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .romaji {
+    color: #0056b3;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  button{
+    margin-left:10px;
+    font-size:0.8em;
+    cursor:pointer;
+    height: 30px;
+    margin-top: 8px;
+  }
+  .lineno{
+    font-weight:700;
+    width: 30px;
+    flex-shrink: 0;
+    color:#888;
+    font-size: 0.8em;
+    margin-top: 8px;
+  }
+  .list-item {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+</style>
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+
+<h1><ruby><rb>日本</rb><rt>にほん</rt></ruby>の<ruby><rb>教育</rb><rt>きょういく</rt></ruby>の<ruby><rb>現状</rb><rt>げんじょう</rt></ruby></h1>
+
+<div class="sentence">
+  <div class="lineno">1</div>
+  <div class="content">
+    <ruby><rb>皆</rb><rt>みな</rt></ruby>さんの<ruby><rb>国</rb><rt>くに</rt></ruby>の<ruby><rb>教育制度</rb><rt>きょういくせいど</rt></ruby>は、<ruby><rb>現在</rb><rt>げんざい</rt></ruby>、どのような<ruby><rb>制度</rb><rt>せいど</rt></ruby>になっていますか。
+    <button onclick="toggle('e1')">訳</button>
+    <div class="en" id="e1">
+      <div class="romaji">Minasan no kuni no kyōiku seido wa, genzai, dono yō na seido ni natte imasu ka.</div>
+      <div>What kind of system is the educational system in your country currently?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    どんないい<ruby><rb>点</rb><rt>てん</rt></ruby>、どんな<ruby><rb>問題点</rb><rt>もんだいてん</rt></ruby>がありますか。
+    <button onclick="toggle('e2')">訳</button>
+    <div class="en" id="e2">
+      <div class="romaji">Donna ii ten, donna mondaiten ga arimasu ka.</div>
+      <div>What are the good points, and what are the problems?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>自分達</rb><rt>じぶんたち</rt></ruby>が<ruby><rb>受</rb><rt>う</rt></ruby>けてきた<ruby><rb>教育</rb><rt>きょういく</rt></ruby>に<ruby><rb>満足</rb><rt>まんぞく</rt></ruby>していますか。
+    <button onclick="toggle('e3')">訳</button>
+    <div class="en" id="e3">
+      <div class="romaji">Jibuntachi ga ukete kita kyōiku ni manzoku shite imasu ka.</div>
+      <div>Are you satisfied with the education you have received?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    この<ruby><rb>課</rb><rt>か</rt></ruby>では、<ruby><rb>教育</rb><rt>きょういく</rt></ruby>について<ruby><rb>考</rb><rt>かんが</rt></ruby>えてみましょう。
+    <button onclick="toggle('e4')">訳</button>
+    <div class="en" id="e4">
+      <div class="romaji">Kono ka de wa, kyōiku ni tsuite kangaete mimashō.</div>
+      <div>In this lesson, let's think about education.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    まず<ruby><rb>始</rb><rt>はじ</rt></ruby>めに、<ruby><rb>日本</rb><rt>にほん</rt></ruby>の<ruby><rb>教育制度</rb><rt>きょういくせいど</rt></ruby>や<ruby><rb>現在</rb><rt>げんざい</rt></ruby>の<ruby><rb>状況</rb><rt>じょうきょう</rt></ruby>について<ruby><rb>紹介</rb><rt>しょうかい</rt></ruby>しますので、その<ruby><rb>後</rb><rt>あと</rt></ruby>で<ruby><rb>皆</rb><rt>みな</rt></ruby>さんの<ruby><rb>国</rb><rt>くに</rt></ruby>の<ruby><rb>教育</rb><rt>きょういく</rt></ruby>について<ruby><rb>話</rb><rt>はな</rt></ruby>し<ruby><rb>合</rb><rt>あ</rt></ruby>ってみて<ruby><rb>下</rb><rt>くだ</rt></ruby>さい。
+    <button onclick="toggle('e5')">訳</button>
+    <div class="en" id="e5">
+      <div class="romaji">Mazu hajime ni, Nihon no kyōiku seido ya genzai no jōkyō ni tsuite shōkai shimasu node, sono ato de minasan no kuni no kyōiku ni tsuite hanashiatte mite kudasai.</div>
+      <div>First, I will introduce Japan's educational system and its current situation, so after that, please discuss the education in your own countries.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">5</div>
+  <div class="content">
+    <ruby><rb>日本</rb><rt>にほん</rt></ruby>の<ruby><rb>教育制度</rb><rt>きょういくせいど</rt></ruby>は、６・３・３・４<ruby><rb>制</rb><rt>せい</rt></ruby>と<ruby><rb>言</rb><rt>い</rt></ruby>われ、<ruby><rb>小学校</rb><rt>しょうがっこう</rt></ruby>が６<ruby><rb>年</rb><rt>ねん</rt></ruby>、<ruby><rb>中学校</rb><rt>ちゅうがっこう</rt></ruby>が３<ruby><rb>年</rb><rt>ねん</rt></ruby>、<ruby><rb>高校</rb><rt>こうこう</rt></ruby>が３<ruby><rb>年</rb><rt>ねん</rt></ruby>、そして、<ruby><rb>大学</rb><rt>だいがく</rt></ruby>が４<ruby><rb>年</rb><rt>ねん</rt></ruby>となっている。
+    <button onclick="toggle('e6')">訳</button>
+    <div class="en" id="e6">
+      <div class="romaji">Nihon no kyōiku seido wa, roku-san-san-yon sei to iware, shōgakkō ga roku-nen, chūgakkō ga san-nen, kōkō ga san-nen, soshite, daigaku ga yo-nen to natte iru.</div>
+      <div>Japan's educational system is called the 6-3-3-4 system, consisting of 6 years of elementary school, 3 years of junior high school, 3 years of high school, and 4 years of university.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    それぞれに<ruby><rb>公立</rb><rt>こうりつ</rt></ruby>と<ruby><rb>私立</rb><rt>しりつ</rt></ruby>があり、<ruby><rb>小学校</rb><rt>しょうがっこう</rt></ruby>と<ruby><rb>中学校</rb><rt>ちゅうがっこう</rt></ruby>は<ruby><rb>義務教育</rb><rt>ぎむきょういく</rt></ruby>だが、<ruby><rb>高校</rb><rt>こうこう</rt></ruby>からは<ruby><rb>行</rb><rt>い</rt></ruby>っても<ruby><rb>行</rb><rt>い</rt></ruby>かなくてもよい。
+    <button onclick="toggle('e7')">訳</button>
+    <div class="en" id="e7">
+      <div class="romaji">Sorezore ni kōritsu to shiritsu ga ari, shōgakkō to chūgakkō wa gimu kyōiku da ga, kōkō kara wa itte mo ikanakute mo yoi.</div>
+      <div>There are public and private schools for each, and elementary and junior high school are compulsory education, but from high school onwards, it is optional to attend.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    しかし、<ruby><rb>高校進学率</rb><rt>こうこうしんがくりつ</rt></ruby>は<ruby><rb>約</rb><rt>やく</rt></ruby>98%なので、<ruby><rb>実際</rb><rt>じっさい</rt></ruby>には<ruby><rb>高校</rb><rt>こうこう</rt></ruby>に行かない<ruby><rb>人</rb><rt>ひと</rt></ruby>はほとんどいない。
+    <button onclick="toggle('e8')">訳</button>
+    <div class="en" id="e8">
+      <div class="romaji">Shikashi, kōkō shingakuritsu wa yaku kyūjū-hachi pāsento na node, jissai ni wa kōkō ni ikanai hito wa hotondo inai.</div>
+      <div>However, since the high school advancement rate is about 98%, in reality, there is almost no one who does not go to high school.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    ４<ruby><rb>年制</rb><rt>ねんせい</rt></ruby>の<ruby><rb>大学</rb><rt>だいがく</rt></ruby>への<ruby><rb>進学率</rb><rt>しんがくりつ</rt></ruby>はだいたい50%ぐらいだが、<ruby><rb>短大</rb><rt>たんだい</rt></ruby>や<ruby><rb>専門学校</rb><rt>せんもんがっこう</rt></ruby>への<ruby><rb>進学率</rb><rt>しんがくりつ</rt></ruby>も<ruby><rb>含</rb><rt>ふく</rt></ruby>めると80%<ruby><rb>近</rb><rt>ちか</rt></ruby>くの<ruby><rb>高校生</rb><rt>こうこうせい</rt></ruby>が、<ruby><rb>上</rb><rt>うえ</rt></ruby>の<ruby><rb>学校</rb><rt>がっこう</rt></ruby>に進む。
+    <button onclick="toggle('e9')">訳</button>
+    <div class="en" id="e9">
+      <div class="romaji">Yo-nensei no daigaku e no shingakuritsu wa daitai gojū pāsento gurai da ga, tandai ya senmon gakkō e no shingakuritsu mo fukumeru to hachijū pāsento chikaku no kōkōsei ga, ue no gakkō ni susumu.</div>
+      <div>The advancement rate to 4-year universities is about 50%, but if you include the advancement rate to junior colleges and vocational schools, nearly 80% of high school students go on to higher education.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">10</div>
+  <div class="content">
+    <ruby><rb>義務教育</rb><rt>ぎむきょういく</rt></ruby>の<ruby><rb>後</rb><rt>あと</rt></ruby>でも<ruby><rb>進学率</rb><rt>しんがくりつ</rt></ruby>が<ruby><rb>高</rb><rt>たか</rt></ruby>い<ruby><rb>日本</rb><rt>にほん</rt></ruby>だが、<ruby><rb>教育</rb><rt>きょういく</rt></ruby>の<ruby><rb>現状</rb><rt>げんじょう</rt></ruby>には<ruby><rb>問題点</rb><rt>もんだいてん</rt></ruby>も<ruby><rb>多</rb><rt>おお</rt></ruby>く、<ruby><rb>特</rb><rt>とく</rt></ruby>に<ruby><rb>以下</rb><rt>いか</rt></ruby>の<ruby><rb>三</rb><rt>みっ</rt></ruby>つのことが<ruby><rb>挙</rb><rt>あ</rt></ruby>げられる。
+    <button onclick="toggle('e10')">訳</button>
+    <div class="en" id="e10">
+      <div class="romaji">Gimu kyōiku no ato demo shingakuritsu ga takai Nihon da ga, kyōiku no genjō ni wa mondaiten mo ōku, toku ni ika no mittsu no koto ga agerareru.</div>
+      <div>Although Japan has a high advancement rate even after compulsory education, there are also many problems with the current state of education, and the following three points in particular are cited.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content list-item">
+    １．「<ruby><rb>学歴社会</rb><rt>がくれきしゃかい</rt></ruby>」と「<ruby><rb>受験戦争</rb><rt>じゅけんせんそう</rt></ruby>」<br>
+    ２．「いじめ」や「<ruby><rb>登校拒否</rb><rt>とうこうきょひ</rt></ruby>」<br>
+    ３．「<ruby><rb>偏差値教育</rb><rt>へんさちきょういく</rt></ruby>」<ruby><rb>対</rb><rt>たい</rt></ruby>「ゆとり<ruby><rb>教育</rb><rt>きょういく</rt></ruby>」
+    <button onclick="toggle('e11')">訳</button>
+    <div class="en" id="e11">
+      <div class="romaji">Ichi. "Gakureki shakai" to "Juken sensō"<br>Ni. "Ijime" ya "Tōkō kyohi"<br>San. "Hensachi kyōiku" tai "Yutori kyōiku"</div>
+      <div>1. "Academic background-oriented society" and "Examination war"<br>2. "Bullying" and "School refusal/Truancy"<br>3. "Deviation value (standardized score) education" vs. "Relaxed/Pressure-free education"</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">15</div>
+  <div class="content">
+    １<ruby><rb>番</rb><rt>ばん</rt></ruby>の「<ruby><rb>受験戦争</rb><rt>じゅけんせんそう</rt></ruby>」というのは、<ruby><rb>中学</rb><rt>ちゅうがく</rt></ruby>や<ruby><rb>高校</rb><rt>こうこう</rt></ruby>や<ruby><rb>大学</rb><rt>だいがく</rt></ruby>の<ruby><rb>入学試験</rb><rt>にゅうがくしけん</rt></ruby>に<ruby><rb>合格</rb><rt>ごうかく</rt></ruby>するための<ruby><rb>競争</rb><rt>きょうそう</rt></ruby>は<ruby><rb>戦争</rb><rt>せんそう</rt></ruby>のようだという意味だ。
+    <button onclick="toggle('e12')">訳</button>
+    <div class="en" id="e12">
+      <div class="romaji">Ichi-ban no "Juken sensō" to iu no wa, chūgaku ya kōkō ya daigaku no nyūgaku shiken ni gōkaku suru tame no kyōsō wa sensō no yō da to iu imi da.</div>
+      <div>Number 1, the "examination war," means that the competition to pass the entrance exams for junior high school, high school, and university is like a war.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>入学試験</rb><rt>にゅうがくしけん</rt></ruby>は<ruby><rb>普通</rb><rt>ふつう</rt></ruby>１<ruby><rb>年</rb><rt>ねん</rt></ruby>に１<ruby><rb>回</rb><rt>かい</rt></ruby>しか受(う)けられない。
+    <button onclick="toggle('e13')">訳</button>
+    <div class="en" id="e13">
+      <div class="romaji">Nyūgaku shiken wa futsū ichi-nen ni ikkai shika ukerarenai.</div>
+      <div>Entrance exams can usually only be taken once a year.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>生徒達</rb><rt>せいとたち</rt></ruby>はその１<ruby><rb>回</rb><rt>かい</rt></ruby>のチャンスのために、<ruby><rb>学校</rb><rt>がっこう</rt></ruby>の<ruby><rb>後</rb><rt>あと</rt></ruby>も<ruby><rb>塾</rb><rt>じゅく</rt></ruby>に通(かよ)ったりして、<ruby><rb>一生懸命</rb><rt>いっしょうけんめい</rt></ruby>に<ruby><rb>勉強</rb><rt>べんきょう</rt></ruby>する。
+    <button onclick="toggle('e14')">訳</button>
+    <div class="en" id="e14">
+      <div class="romaji">Seitotachi wa sono ikkai no chansu no tame ni, gakkō no ato mo juku ni kayottari shite, isshōkenmei ni benkyō suru.</div>
+      <div>For that one chance, students commute to cram schools after regular school and study desperately.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    そして、<ruby><rb>大学</rb><rt>だいがく</rt></ruby>の<ruby><rb>入学試験</rb><rt>にゅうがくしけん</rt></ruby>に<ruby><rb>失敗</rb><rt>しっぱい</rt></ruby>した<ruby><rb>高校生</rb><rt>こうこうせい</rt></ruby>は、もう<ruby><rb>一度</rb><rt>いちど</rt></ruby>、<ruby><rb>次</rb><rt>つぎ</rt></ruby>の<ruby><rb>年</rb><rt>とし</rt></ruby>の<ruby><rb>試験</rb><rt>しけん</rt></ruby>に<ruby><rb>挑戦</rb><rt>ちょうせん</rt></ruby>するために「<ruby><rb>浪人生</rb><rt>ろうにんせい</rt></ruby>」になることが<ruby><rb>多</rb><rt>おお</rt></ruby>い。
+    <button onclick="toggle('e15')">訳</button>
+    <div class="en" id="e15">
+      <div class="romaji">Soshite, daigaku no nyūgaku shiken ni shippai shita kōkōsei wa, mō ichido, tsugi no toshi no shiken ni chōsen suru tame ni "rōninsei" ni naru koto ga ōi.</div>
+      <div>And high school students who fail the university entrance exams often become "ronin" (masterless samurai/students waiting for another chance) in order to try the exam again the following year.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    「<ruby><rb>浪人</rb><rt>ろうにん</rt></ruby>」というのは、もともと「<ruby><rb>主人</rb><rt>しゅじん</rt></ruby>のいない<ruby><rb>侍</rb><rt>さむらい</rt></ruby>」のことを<ruby><rb>意味</rb><rt>いみ</rt></ruby>したが、<ruby><rb>今</rb><rt>いま</rt></ruby>は、<ruby><rb>希望</rb><rt>きぼう</rt></ruby>の<ruby><rb>大学</rb><rt>だいがく</rt></ruby>に<ruby><rb>入</rb><rt>はい</rt></ruby>れなかったために<ruby><rb>予備校</rb><rt>よびこう</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>ったりしながら<ruby><rb>受験勉強</rb><rt>じゅけんべんきょう</rt></ruby>をしている<ruby><rb>人達</rb><rt>ひとたち</rt></ruby>のことを指す。
+    <button onclick="toggle('e16')">訳</button>
+    <div class="en" id="e16">
+      <div class="romaji">"Rōnin" to iu no wa, motomoto "shujin no inai samurai" no koto o imi shita ga, ima wa, kibō no daigaku ni hairenakatta tame ni yobikō ni ittari shinagara juken benkyō o shite iru hitotachi no koto o sasu.</div>
+      <div>The term "ronin" originally meant a "samurai without a master," but now it refers to those who are studying for entrance exams, often while attending prep schools, because they could not get into their desired university.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">20</div>
+  <div class="content">
+    その他、<ruby><rb>受験</rb><rt>じゅけん</rt></ruby>の<ruby><rb>厳</rb><rt>きび</rt></ruby>しさを<ruby><rb>表</rb><rt>あらわ</rt></ruby>す<ruby><rb>言葉</rb><rt>ことば</rt></ruby>には「<ruby><rb>四当五落</rb><rt>よんとうごらく</rt></ruby>」や「<ruby><rb>受験地獄</rb><rt>じゅけんじごく</rt></ruby>」という<ruby><rb>表現</rb><rt>ひょうげん</rt></ruby>もある。
+    <button onclick="toggle('e17')">訳</button>
+    <div class="en" id="e17">
+      <div class="romaji">Sono hoka, juken no kibishisa o arawasu kotoba ni wa "yontōgoraku" ya "juken jigoku" to iu hyōgen mo aru.</div>
+      <div>In addition, to express the harshness of the exams, there are expressions like "pass with four, fail with five" and "exam hell."</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>前者</rb><rt>ぜんしゃ</rt></ruby>は、<ruby><rb>毎日</rb><rt>まいにち</rt></ruby>４<ruby><rb>時間</rb><rt>じかん</rt></ruby>しか<ruby><rb>寝</rb><rt>ね</rt></ruby>ずに<ruby><rb>勉強</rb><rt>べんきょう</rt></ruby>すれば<ruby><rb>大学</rb><rt>だいがく</rt></ruby>に<ruby><rb>合格</rb><rt>ごうかく</rt></ruby>できるが、５<ruby><rb>時間以上</rb><rt>じかんいじょう</rt></ruby><ruby><rb>寝</rb><rt>ね</rt></ruby>たら<ruby><rb>試験</rb><rt>しけん</rt></ruby>に<ruby><rb>落</rb><rt>お</rt></ruby>ちるという<ruby><rb>意味</rb><rt>いみ</rt></ruby>、<ruby><rb>後者</rb><rt>こうしゃ</rt></ruby>は、<ruby><rb>受験</rb><rt>じゅけん</rt></ruby>で<ruby><rb>苦</rb><rt>くる</rt></ruby>しむのは<ruby><rb>地獄</rb><rt>じごく</rt></ruby>のようだという<ruby><rb>意味</rb><rt>いみ</rt></ruby>だ。
+    <button onclick="toggle('e18')">訳</button>
+    <div class="en" id="e18">
+      <div class="romaji">Zensha wa, mainichi yo-jikan shika nezuni benkyō sureba daigaku ni gōkaku dekiru ga, go-jikan ijō netara shiken ni ochiru to iu imi, kōsha wa, juken de kurushimu no wa jigoku no yō da to iu imi da.</div>
+      <div>The former means that if you study on only four hours of sleep a day you will pass, but if you sleep for five hours or more you will fail the exam; the latter means that suffering through the exams is like hell.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    そんな<ruby><rb>受験生</rb><rt>じゅけんせい</rt></ruby>がいる<ruby><rb>家庭</rb><rt>かてい</rt></ruby>では、<ruby><rb>家族</rb><rt>かぞく</rt></ruby>も<ruby><rb>必死</rb><rt>ひっし</rt></ruby>に<ruby><rb>協力</rb><rt>きょうりょく</rt></ruby>する。
+    <button onclick="toggle('e19')">訳</button>
+    <div class="en" id="e19">
+      <div class="romaji">Sonna jukensei ga iru katei de wa, kazoku mo hisshi ni kyōryoku suru.</div>
+      <div>In a household with such an examinee, the family also cooperates desperately.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>自分達</rb><rt>じぶんたち</rt></ruby>が<ruby><rb>見</rb><rt>み</rt></ruby>たいテレビを<ruby><rb>我慢</rb><rt>がまん</rt></ruby>したり、<ruby><rb>夜中</rb><rt>よなか</rt></ruby>まで<ruby><rb>勉強</rb><rt>べんきょう</rt></ruby>する<ruby><rb>子供</rb><rt>こども</rt></ruby>のために<ruby><rb>夜食</rb><rt>やしょく</rt></ruby>を<ruby><rb>用意</rb><rt>ようい</rt></ruby>したりして、<ruby><rb>受験生</rb><rt>じゅけんせい</rt></ruby>が<ruby><rb>勉強</rb><rt>べんきょう</rt></ruby>しやすい<ruby><rb>環境</rb><rt>かんきょう</rt></ruby>を<ruby><rb>作</rb><rt>つく</rt></ruby>るのだ。
+    <button onclick="toggle('e20')">訳</button>
+    <div class="en" id="e20">
+      <div class="romaji">Jibuntachi ga mitai terebi o gaman shitari, yonaka made benkyō suru kodomo no tame ni yashoku o yōi shitari shite, jukensei ga benkyō shiyasui kankyō o tsukuru no da.</div>
+      <div>They put up with not watching the TV shows they want to see, prepare late-night snacks for the child studying into the middle of the night, and create an environment that makes it easy for the student to study.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">25</div>
+  <div class="content">
+    また、<ruby><rb>受験</rb><rt>じゅけん</rt></ruby>に<ruby><rb>縁起</rb><rt>えんぎ</rt></ruby>の<ruby><rb>悪</rb><rt>わる</rt></ruby>い<ruby><rb>言葉</rb><rt>ことば</rt></ruby>「すべる」「<ruby><rb>落</rb><rt>お</rt></ruby>ちる」などは<ruby><rb>使</rb><rt>つか</rt></ruby>わないように<ruby><rb>気</rb><rt>き</rt></ruby>をつけ、<ruby><rb>受験</rb><rt>じゅけん</rt></ruby>の<ruby><rb>神様</rb><rt>かみさま</rt></ruby>が<ruby><rb>祭</rb><rt>まつ</rt></ruby>ってある<ruby><rb>神社</rb><rt>じんじゃ</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>って<ruby><rb>合格</rb><rt>ごうかく</rt></ruby>を<ruby><rb>祈</rb><rt>いの</rt></ruby>るといったこともする。
+    <button onclick="toggle('e21')">訳</button>
+    <div class="en" id="e21">
+      <div class="romaji">Mata, juken ni engi no warui kotoba "suberu" "ochiru" nado wa tsukawanai yō ni ki o tsuke, juken no kamisama ga matsutte aru jinja ni itte gōkaku o inoru to itta koto mo suru.</div>
+      <div>Also, they are careful not to use words that are bad luck for exams, such as "to slip" or "to fall (fail)", and they do things like go to shrines where the god of examinations is enshrined to pray for success.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
