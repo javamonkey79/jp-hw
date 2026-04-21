@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>日本の教育の現状 - 続き</title>
+<style>
+  body{
+    font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    font-size:20px;
+    line-height:2.35;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  ruby{ ruby-position: over; }
+  rt{ font-size:0.6em; color:#555; }
+  .sentence{ margin: 0 0 16px 0; display: flex; align-items: flex-start; }
+  .content { flex: 1; }
+  .en{
+    display:none;
+    margin-top:6px;
+    font-size:0.9em;
+    color:#333;
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .romaji {
+    color: #0056b3;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  button{
+    margin-left:10px;
+    font-size:0.8em;
+    cursor:pointer;
+    height: 30px;
+    margin-top: 8px;
+  }
+  .lineno{
+    font-weight:700;
+    width: 30px;
+    flex-shrink: 0;
+    color:#888;
+    font-size: 0.8em;
+    margin-top: 8px;
+  }
+</style>
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    では、どうして<ruby><rb>日本</rb><rt>にほん</rt></ruby>ではこのような<ruby><rb>厳</rb><rt>きび</rt></ruby>しい<ruby><rb>受験</rb><rt>じゅけん</rt></ruby>の<ruby><rb>状況</rb><rt>じょうきょう</rt></ruby>が<ruby><rb>生</rb><rt>う</rt></ruby>まれたのだろうか。
+    <button onclick="toggle('p1')">訳</button>
+    <div class="en" id="p1">
+      <div class="romaji">Dewa, dōshite Nihon de wa kono yō na kibishii juken no jōkyō ga umareta no darō ka.</div>
+      <div>Well then, why was such a severe examination situation born in Japan?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>理由</rb><rt>りゆう</rt></ruby>の<ruby><rb>一</rb><rt>ひと</rt></ruby>つとして「<ruby><rb>学歴社会</rb><rt>がくれきしゃかい</rt></ruby>」が<ruby><rb>挙</rb><rt>あ</rt></ruby>げられるだろう。
+    <button onclick="toggle('p2')">訳</button>
+    <div class="en" id="p2">
+      <div class="romaji">Riyū no hitotsu to shite "gakureki shakai" ga agerareru darō.</div>
+      <div>As one of the reasons, the "academic record society" can probably be raised.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>日本</rb><rt>にほん</rt></ruby>では、<ruby><rb>有名大学出身者</rb><rt>ゆうめいだいがくしゅっしんしゃ</rt></ruby>はいい<ruby><rb>会社</rb><rt>かいしゃ</rt></ruby>に<ruby><rb>就職</rb><rt>しゅうしょく</rt></ruby>しやすく、<ruby><rb>地位</rb><rt>ちい</rt></ruby>も<ruby><rb>早</rb><rt>はや</rt></ruby>く<ruby><rb>上</rb><rt>あ</rt></ruby>がり、<ruby><rb>給料</rb><rt>きゅうりょう</rt></ruby>もたくさんもらえるという<ruby><rb>傾向</rb><rt>けいこう</rt></ruby>がある。
+    <button onclick="toggle('p3')">訳</button>
+    <div class="en" id="p3">
+      <div class="romaji">Nihon de wa, yūmei daigaku shusshinsha wa ii kaisha ni shūshoku shiyasuku, chii mo hayaku agari, kyūryō mo takusan moraeru to iu keikō ga aru.</div>
+      <div>In Japan, there is a tendency that graduates of famous universities find it easier to get jobs at good companies, their status rises quickly, and they can receive a lot of salary.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">30</div>
+  <div class="content">
+    <ruby><rb>一方</rb><rt>いっぽう</rt></ruby>、あまり<ruby><rb>有名</rb><rt>ゆうめい</rt></ruby>ではない<ruby><rb>大学</rb><rt>だいがく</rt></ruby>を<ruby><rb>出</rb><rt>で</rt></ruby>た<ruby><rb>人</rb><rt>ひと</rt></ruby>、あるいは、<ruby><rb>大学</rb><rt>だいがく</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>っていない<ruby><rb>人</rb><rt>ひと</rt></ruby>は、どんなに<ruby><rb>能力</rb><rt>のうりょく</rt></ruby>のある<ruby><rb>人</rb><rt>ひと</rt></ruby>でも、<ruby><rb>能力</rb><rt>のうりょく</rt></ruby>のあることをなかなか<ruby><rb>認</rb><rt>みと</rt></ruby>めてもらえない。
+    <button onclick="toggle('p4')">訳</button>
+    <div class="en" id="p4">
+      <div class="romaji">Ippō, amari yūmei de wa nai daigaku o deta hito, aruiwa, daigaku ni itte inai hito wa, donna ni nōryoku no aru hito demo, nōryoku no aru koto o nakanaka mitomete moraenai.</div>
+      <div>On the other hand, people who graduated from universities that are not very famous, or people who have not gone to university, no matter how capable they are, have a hard time getting their abilities recognized.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    つまり、<ruby><rb>学歴社会</rb><rt>がくれきしゃかい</rt></ruby>とは、その<ruby><rb>人</rb><rt>ひと</rt></ruby>がどんな<ruby><rb>学校</rb><rt>がっこう</rt></ruby>を<ruby><rb>卒業</rb><rt>そつぎょう</rt></ruby>したかによって<ruby><rb>人生</rb><rt>じんせい</rt></ruby>が<ruby><rb>決</rb><rt>き</rt></ruby>まる<ruby><rb>社会</rb><rt>しゃかい</rt></ruby>、いい<ruby><rb>大学</rb><rt>だいがく</rt></ruby>に<ruby><rb>入</rb><rt>はい</rt></ruby>れれば<ruby><rb>将来</rb><rt>しょうらい</rt></ruby>、<ruby><rb>幸</rb><rt>しあわ</rt></ruby>せになる<ruby><rb>可能性</rb><rt>かのうせい</rt></ruby>も<ruby><rb>高</rb><rt>たか</rt></ruby>くなるという<ruby><rb>社会</rb><rt>しゃかい</rt></ruby>なのだ。
+    <button onclick="toggle('p5')">訳</button>
+    <div class="en" id="p5">
+      <div class="romaji">Tsumari, gakureki shakai to wa, sono hito ga donna gakkō o sotsugyō shita ka ni yotte jinsei ga kimaru shakai, ii daigaku ni irereba shōrai, shiawase ni naru kanōsei mo takaku naru to iu shakai na no da.</div>
+      <div>In short, an academic record society is a society where a person's life is determined by what kind of school they graduated from, a society where if you can get into a good university, the possibility of becoming happy in the future also becomes high.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    そこで、<ruby><rb>親達</rb><rt>おやたち</rt></ruby>は<ruby><rb>自分</rb><rt>じぶん</rt></ruby>の<ruby><rb>子供</rb><rt>こども</rt></ruby>を<ruby><rb>塾</rb><rt>じゅく</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>かせ、<ruby><rb>受験</rb><rt>じゅけん</rt></ruby>をしなくても<ruby><rb>有名私立大学</rb><rt>ゆうめいしりつだいがく</rt></ruby>に<ruby><rb>進</rb><rt>すす</rt></ruby>めるエスカレーター<ruby><rb>式</rb><rt>しき</rt></ruby>の<ruby><rb>小学校</rb><rt>しょうがっこう</rt></ruby>や<ruby><rb>中学校</rb><rt>ちゅうがっこう</rt></ruby>に<ruby><rb>入</rb><rt>い</rt></ruby>れようとする。
+    <button onclick="toggle('p6')">訳</button>
+    <div class="en" id="p6">
+      <div class="romaji">Sokode, oyatachi wa jibun no kodomo o juku ni ikase, juken o shinakute mo yūmei shiritsu daigaku ni susumeru esukarētā-shiki no shōgakkō ya chūgakkō ni ireyō to suru.</div>
+      <div>Therefore, parents make their children go to cram schools, and try to put them into escalator-style elementary and junior high schools where they can advance to famous private universities without taking entrance exams.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">35</div>
+  <div class="content">
+    2008<ruby><rb>年</rb><rt>ねん</rt></ruby>の<ruby><rb>文部科学省</rb><rt>もんぶかがくしょう</rt></ruby>（<ruby><rb>文科省</rb><rt>もんかしょう</rt></ruby>）の<ruby><rb>統計</rb><rt>とうけい</rt></ruby>では、<ruby><rb>小学生</rb><rt>しょうがくせい</rt></ruby>の<ruby><rb>約</rb><rt>やく</rt></ruby>37％、<ruby><rb>中学生</rb><rt>ちゅうがくせい</rt></ruby>の<ruby><rb>約</rb><rt>やく</rt></ruby>62％、<ruby><rb>高校生</rb><rt>こうこうせい</rt></ruby>の<ruby><rb>約</rb><rt>やく</rt></ruby>43％が<ruby><rb>塾</rb><rt>じゅく</rt></ruby>に<ruby><rb>通</rb><rt>かよ</rt></ruby>っているそうだ。
+    <button onclick="toggle('p7')">訳</button>
+    <div class="en" id="p7">
+      <div class="romaji">Nisen-hachi-nen no Monbukagakushō (Monkashō) no tōkei de wa, shōgakusei no yaku sanjū-nana pāsento, chūgakusei no yaku rokujū-ni pāsento, kōkōsei no yaku yonjū-san pāsento ga juku ni kayotte iru sō da.</div>
+      <div>According to 2008 statistics from the Ministry of Education, Culture, Sports, Science and Technology (MEXT), about 37% of elementary school students, 62% of junior high school students, and 43% of high school students attend cram schools.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    このような<ruby><rb>現状</rb><rt>げんじょう</rt></ruby>がある<ruby><rb>一方</rb><rt>いっぽう</rt></ruby>、<ruby><rb>今</rb><rt>いま</rt></ruby>のような<ruby><rb>学歴社会</rb><rt>がくれきしゃかい</rt></ruby>をいいことだとは<ruby><rb>思</rb><rt>おも</rt></ruby>っていない<ruby><rb>日本人</rb><rt>にほんじん</rt></ruby>もたくさんいる。
+    <button onclick="toggle('p8')">訳</button>
+    <div class="en" id="p8">
+      <div class="romaji">Kono yō na genjō ga aru ippō, ima no yō na gakureki shakai o ii koto da to wa omotte inai Nihonjin mo takusan iru.</div>
+      <div>While such a current situation exists, on the other hand, there are also many Japanese people who do not think that the current academic record society is a good thing.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <ruby><rb>子供</rb><rt>こども</rt></ruby>が<ruby><rb>学校</rb><rt>がっこう</rt></ruby>や<ruby><rb>塾</rb><rt>じゅく</rt></ruby>の<ruby><rb>勉強</rb><rt>べんきょう</rt></ruby>で<ruby><rb>忙</rb><rt>いそが</rt></ruby>しすぎて、<ruby><rb>子供</rb><rt>こども</rt></ruby>らしく<ruby><rb>外</rb><rt>そと</rt></ruby>で<ruby><rb>遊</rb><rt>あそ</rt></ruby>ぶ<ruby><rb>時間</rb><rt>じかん</rt></ruby>がないことを<ruby><rb>心配</rb><rt>しんぱい</rt></ruby>する<ruby><rb>人</rb><rt>ひと</rt></ruby>、<ruby><rb>学歴</rb><rt>がくれき</rt></ruby>だけで<ruby><rb>能力</rb><rt>のうりょく</rt></ruby>を<ruby><rb>判断</rb><rt>はんだん</rt></ruby>されることをよくないと<ruby><rb>思</rb><rt>おも</rt></ruby>っている<ruby><rb>人</rb><rt>ひと</rt></ruby>は<ruby><rb>多</rb><rt>おお</rt></ruby>い。
+    <button onclick="toggle('p9')">訳</button>
+    <div class="en" id="p9">
+      <div class="romaji">Kodomo ga gakkō ya juku no benkyō de isogashisugite, kodomorashiku soto de asobu jikan ga nai koto o shinpai suru hito, gakureki dake de nōryoku o handan sareru koto o yokunai to omotte iru hito wa ōi.</div>
+      <div>There are many people who worry that children are too busy with studying at school and cram schools and have no time to play outside like children, and people who think it is not good to have abilities judged solely by academic background.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">40</div>
+  <div class="content">
+    <ruby><rb>日本</rb><rt>にほん</rt></ruby>では<ruby><rb>以前</rb><rt>いぜん</rt></ruby>は、<ruby><rb>首相</rb><rt>しゅしょう</rt></ruby>になる<ruby><rb>人</rb><rt>ひと</rt></ruby>はほとんど<ruby><rb>東京大学</rb><rt>とうきょうだいがく</rt></ruby>（<ruby><rb>東大</rb><rt>とうだい</rt></ruby>）<ruby><rb>出身者</rb><rt>しゅっしんしゃ</rt></ruby>ばかりだったが、<ruby><rb>最近</rb><rt>さいきん</rt></ruby>は<ruby><rb>東大出身者以外</rb><rt>とうだいしゅっしんしゃいがい</rt></ruby>の<ruby><rb>人</rb><rt>ひと</rt></ruby>も<ruby><rb>首相</rb><rt>しゅしょう</rt></ruby>になるようになった。
+    <button onclick="toggle('p10')">訳</button>
+    <div class="en" id="p10">
+      <div class="romaji">Nihon de wa izen wa, shushō ni naru hito wa hotondo Tōkyō Daigaku (Tōdai) shusshinsha bakari datta ga, saikin wa Tōdai shusshinsha igai no hito mo shushō ni naru yō ni natta.</div>
+      <div>In Japan in the past, almost all the people who became Prime Minister were graduates of the University of Tokyo (Todai), but recently people other than Todai graduates have also come to become Prime Minister.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    このことを<ruby><rb>歓迎</rb><rt>かんげい</rt></ruby>する<ruby><rb>人</rb><rt>ひと</rt></ruby>が<ruby><rb>多</rb><rt>おお</rt></ruby>いのも、<ruby><rb>学歴社会</rb><rt>がくれきしゃかい</rt></ruby>が<ruby><rb>決</rb><rt>けっ</rt></ruby>してよく<ruby><rb>思</rb><rt>おも</rt></ruby>われていないからだろう。
+    <button onclick="toggle('p11')">訳</button>
+    <div class="en" id="p11">
+      <div class="romaji">Kono koto o kangei suru hito ga ōi no mo, gakureki shakai ga kesshite yoku omowarete inai kara darō.</div>
+      <div>The fact that many people welcome this is also probably because the academic record society is by no means thought well of.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    ２<ruby><rb>番目</rb><rt>ばんめ</rt></ruby>の<ruby><rb>問題</rb><rt>もんだい</rt></ruby>は「いじめ」と「<ruby><rb>登校拒否</rb><rt>とうこうきょひ</rt></ruby>」だ。
+    <button onclick="toggle('p12')">訳</button>
+    <div class="en" id="p12">
+      <div class="romaji">Ni-banme no mondai wa "ijime" to "tōkō kyohi" da.</div>
+      <div>The second problem is "bullying" and "school refusal" (truancy).</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    「いじめ」では、ひどい<ruby><rb>場合</rb><rt>ばあい</rt></ruby>はいじめられた<ruby><rb>子供</rb><rt>こども</rt></ruby>が<ruby><rb>自殺</rb><rt>じさつ</rt></ruby>してしまうことさえある。
+    <button onclick="toggle('p13')">訳</button>
+    <div class="en" id="p13">
+      <div class="romaji">"Ijime" de wa, hidoi baai wa ijimerareta kodomo ga jisatsu shite shimau koto sae aru.</div>
+      <div>In "bullying", in severe cases, the bullied child might even commit suicide.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    「<ruby><rb>登校拒否</rb><rt>とうこうきょひ</rt></ruby>」というのは、いじめられたとか<ruby><rb>学校</rb><rt>がっこう</rt></ruby>の<ruby><rb>勉強</rb><rt>べんきょう</rt></ruby>についていけないという<ruby><rb>理由</rb><rt>りゆう</rt></ruby>で、<ruby><rb>学校</rb><rt>がっこう</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>かなくなってしまうことだ。
+    <button onclick="toggle('p14')">訳</button>
+    <div class="en" id="p14">
+      <div class="romaji">"Tōkō kyohi" to iu no wa, ijimerareta toka gakkō no benkyō ni tsuite ikenai to iu riyū de, gakkō ni ikanaku natte shimau koto da.</div>
+      <div>"School refusal" means ending up not going to school for reasons such as being bullied or not being able to keep up with school studies.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">45</div>
+  <div class="content">
+    これらの<ruby><rb>問題</rb><rt>もんだい</rt></ruby>の<ruby><rb>原因</rb><rt>げんいん</rt></ruby>はたくさんあって<ruby><rb>複雑</rb><rt>ふくざつ</rt></ruby>だが、<ruby><rb>日本社会</rb><rt>にほんしゃかい</rt></ruby>の「<ruby><rb>他人</rb><rt>たにん</rt></ruby>と<ruby><rb>同</rb><rt>おな</rt></ruby>じようであることが<ruby><rb>求</rb><rt>もと</rt></ruby>められる」「<ruby><rb>他人</rb><rt>たにん</rt></ruby>と<ruby><rb>違</rb><rt>ちが</rt></ruby>うことがあまりいいことだと<ruby><rb>思</rb><rt>おも</rt></ruby>われない」という<ruby><rb>意識</rb><rt>いしき</rt></ruby>と<ruby><rb>受験教育</rb><rt>じゅけんきょういく</rt></ruby>のプレッシャーが、いじめや<ruby><rb>登校拒否</rb><rt>とうこうきょひ</rt></ruby>の<ruby><rb>主</rb><rt>おも</rt></ruby>な<ruby><rb>原因</rb><rt>げんいん</rt></ruby>だと<ruby><rb>言</rb><rt>い</rt></ruby>われている。
+    <button onclick="toggle('p15')">訳</button>
+    <div class="en" id="p15">
+      <div class="romaji">Korera no mondai no gen'in wa takusan atte fukuzatsu da ga, Nihon shakai no "tanin to onaji yō de aru koto ga motomerareru" "tanin to chigau koto ga amari ii koto da to omowarenai" to iu ishiki to juken kyōiku no puresshā ga, ijime ya tōkō kyohi no omona gen'in da to iwarete iru.</div>
+      <div>The causes of these problems are numerous and complex, but it is said that the Japanese society's consciousness that "it is required to be like others" and "it is not thought to be a very good thing to be different from others," along with the pressure of examination education, are the main causes of bullying and school refusal.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
