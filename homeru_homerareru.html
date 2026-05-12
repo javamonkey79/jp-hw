@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>会話文 ほめる / ほめられる</title>
+<style>
+  body{
+    font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    font-size:20px;
+    line-height:2.35;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  h2 { font-size: 22px; margin-top: 20px; border-bottom: 2px solid #ccc; padding-bottom: 8px; }
+  ruby{ ruby-position: over; }
+  rt{ font-size:0.6em; color:#555; }
+  .sentence{ margin: 0 0 16px 0; display: flex; align-items: flex-start; }
+  .content { flex: 1; }
+  .en{
+    display:none;
+    margin-top:6px;
+    font-size:0.9em;
+    color:#333;
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .romaji {
+    color: #0056b3;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  button{
+    margin-left:10px;
+    font-size:0.8em;
+    cursor:pointer;
+    height: 30px;
+    margin-top: 8px;
+  }
+  .lineno{
+    font-weight:700;
+    width: 30px;
+    flex-shrink: 0;
+    color:#888;
+    font-size: 0.9em;
+    margin-top: 8px;
+  }
+  .speaker {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  .header-box {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+</style>
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+
+<h2>会話文 ほめる / ほめられる</h2>
+
+<div class="header-box">
+  <div class="sentence">
+    <div class="lineno">1</div>
+    <div class="content">
+      会話文１　<ruby><rb>同級生</rb><rt>どうきゅうせい</rt></ruby>の<ruby><rb>鈴木</rb><rt>すずき</rt></ruby>はるかと<ruby><rb>高橋勇太</rb><rt>たかはしゆうた</rt></ruby>が、<ruby><rb>授業</rb><rt>じゅぎょう</rt></ruby>の<ruby><rb>前</rb><rt>まえ</rt></ruby>に<ruby><rb>教室</rb><rt>きょうしつ</rt></ruby>で<ruby><rb>話</rb><rt>はな</rt></ruby>している。
+      <button onclick="toggle('c1_0')">訳</button>
+      <div class="en" id="c1_0">
+        <div class="romaji">Kaiwabun 1: Dōkyūsei no Suzuki Haruka to Takahashi Yūta ga, jugyō no mae ni kyōshitsu de hanashite iru.</div>
+        <div>Conversation 1: Classmates Haruka Suzuki and Yuta Takahashi are talking in the classroom before class.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">はるか：</span><ruby><rb>高橋君</rb><rt>たかはしくん</rt></ruby>、<ruby><rb>弟</rb><rt>おとうと</rt></ruby>さんが<ruby><rb>京都大学</rb><rt>きょうとだいがく</rt></ruby>の<ruby><rb>医学部</rb><rt>いがくぶ</rt></ruby>に<ruby><rb>合格</rb><rt>ごうかく</rt></ruby>したんだって。すごいね。
+    <button onclick="toggle('c1_1')">訳</button>
+    <div class="en" id="c1_1">
+      <div class="romaji">Haruka: Takahashi-kun, otōto-san ga Kyōto Daigaku no igakubu ni gōkaku shita n datte. Sugoi ne.</div>
+      <div>Haruka: Takahashi, I heard your younger brother passed the entrance exam for the medical department at Kyoto University. That's amazing.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>いやあ、すごいって<ruby><rb>言</rb><rt>い</rt></ruby>っても、１<ruby><rb>年</rb><rt>ねん</rt></ruby>、<ruby><rb>浪人</rb><rt>ろうにん</rt></ruby>してるからね。
+    <button onclick="toggle('c1_2')">訳</button>
+    <div class="en" id="c1_2">
+      <div class="romaji">Yūta: Iyaa, sugoi tte itte mo, ichi-nen, rōnin shiteru kara ne.</div>
+      <div>Yuta: Nah, even if you say it's amazing, he was a ronin (studied for another year) for one year.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">はるか：</span><ruby><rb>浪人</rb><rt>ろうにん</rt></ruby>したって、<ruby><rb>京大</rb><rt>きょうだい</rt></ruby>の<ruby><rb>医学部</rb><rt>いがくぶ</rt></ruby>にはなかなか<ruby><rb>入</rb><rt>はい</rt></ruby>れないよ。
+    <button onclick="toggle('c1_3')">訳</button>
+    <div class="en" id="c1_3">
+      <div class="romaji">Haruka: Rōnin shita tte, Kyōdai no igakubu ni wa nakanaka hairenai yo.</div>
+      <div>Haruka: Even if he was a ronin, it's really hard to get into Kyoto University's medical department.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">5</div>
+  <div class="content">
+    <span class="speaker">勇太：</span>でも<ruby><rb>弟</rb><rt>おとうと</rt></ruby>のクラスメートは、<ruby><rb>去年</rb><rt>きょねん</rt></ruby>、<ruby><rb>浪人</rb><rt>ろうにん</rt></ruby>しないでストレートで<ruby><rb>合格</rb><rt>ごうかく</rt></ruby>したらしいから、それに<ruby><rb>比</rb><rt>くら</rt></ruby>べれば…。
+    <button onclick="toggle('c1_4')">訳</button>
+    <div class="en" id="c1_4">
+      <div class="romaji">Yūta: Demo otōto no kurasumēto wa, kyonen, rōnin shinaide sutorēto de gōkaku shita rashii kara, sore ni kurabereba...</div>
+      <div>Yuta: But it seems my brother's classmate passed straight away last year without being a ronin, so compared to that...</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">はるか：</span>でも、すごいよ。ご<ruby><rb>両親</rb><rt>りょうしん</rt></ruby>も<ruby><rb>喜</rb><rt>よろこ</rt></ruby>んでいらっしゃるでしょう？
+    <button onclick="toggle('c1_5')">訳</button>
+    <div class="en" id="c1_5">
+      <div class="romaji">Haruka: Demo, sugoi yo. Go-ryōshin mo yorokonde irassharu deshō?</div>
+      <div>Haruka: But it's amazing. Your parents must be happy, right?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">勇太：</span>そうだね。まあ、<ruby><rb>京大</rb><rt>きょうだい</rt></ruby>は<ruby><rb>公立</rb><rt>こうりつ</rt></ruby>だから<ruby><rb>私立</rb><rt>しりつ</rt></ruby>に<ruby><rb>行</rb><rt>い</rt></ruby>くより<ruby><rb>学費</rb><rt>がくひ</rt></ruby>も<ruby><rb>安</rb><rt>やす</rt></ruby>いし、よかったかな。でも、せっかく<ruby><rb>入</rb><rt>はい</rt></ruby>れたんだから、<ruby><rb>将来</rb><rt>しょうらい</rt></ruby>はいい<ruby><rb>医者</rb><rt>いしゃ</rt></ruby>になってもらいたいなあ。
+    <button onclick="toggle('c1_6')">訳</button>
+    <div class="en" id="c1_6">
+      <div class="romaji">Yūta: Sō da ne. Maa, Kyōdai wa kōritsu dakara shiritsu ni iku yori gakuhi mo yasui shi, yokatta kana. Demo, sekkaku ireta n dakara, shōrai wa ii isha ni natte moraitai naa.</div>
+      <div>Yuta: Yeah. Well, Kyoto University is public, so the tuition is cheaper than going to a private one, which is good. But since he managed to get in, I want him to become a good doctor in the future.</div>
+    </div>
+  </div>
+</div>
+
+<div class="header-box" style="margin-top: 30px;">
+  <div class="sentence">
+    <div class="lineno">10</div>
+    <div class="content">
+      会話文２　はるかが、<ruby><rb>同級生</rb><rt>どうきゅうせい</rt></ruby>の<ruby><rb>西川道子</rb><rt>にしかわみちこ</rt></ruby>と<ruby><rb>大学</rb><rt>だいがく</rt></ruby>の<ruby><rb>食堂</rb><rt>しょくどう</rt></ruby>で<ruby><rb>話</rb><rt>はな</rt></ruby>している。
+      <button onclick="toggle('c2_0')">訳</button>
+      <div class="en" id="c2_0">
+        <div class="romaji">Kaiwabun 2: Haruka ga, dōkyūsei no Nishikawa Michiko to daigaku no shokudō de hanashite iru.</div>
+        <div>Conversation 2: Haruka is talking with her classmate Michiko Nishikawa in the university cafeteria.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">道子：</span>ねえ、はるか、ゼミの<ruby><rb>今度</rb><rt>こんど</rt></ruby>のレポート、<ruby><rb>何</rb><rt>なに</rt></ruby>について<ruby><rb>書</rb><rt>か</rt></ruby>くか<ruby><rb>決</rb><rt>き</rt></ruby>めた？
+    <button onclick="toggle('c2_1')">訳</button>
+    <div class="en" id="c2_1">
+      <div class="romaji">Michiko: Nee, Haruka, zemi no kondo no repōto, nani ni tsuite kaku ka kimeta?</div>
+      <div>Michiko: Hey, Haruka, have you decided what to write about for the seminar's next report?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">はるか：</span>うん、アメリカと<ruby><rb>日本</rb><rt>にほん</rt></ruby>の<ruby><rb>教育制度</rb><rt>きょういくせいど</rt></ruby>の<ruby><rb>違</rb><rt>ちが</rt></ruby>いについて<ruby><rb>書</rb><rt>か</rt></ruby>こうと<ruby><rb>思</rb><rt>おも</rt></ruby>っているんだけど。
+    <button onclick="toggle('c2_2')">訳</button>
+    <div class="en" id="c2_2">
+      <div class="romaji">Haruka: Un, Amerika to Nihon no kyōiku seido no chigai ni tsuite kakō to omotte iru n dakedo.</div>
+      <div>Haruka: Yeah, I'm thinking of writing about the differences between the American and Japanese educational systems.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">道子：</span>ああ、はるかはアメリカに<ruby><rb>行</rb><rt>い</rt></ruby>ったことがあるから、アメリカのこと、よく<ruby><rb>知</rb><rt>し</rt></ruby>ってるしね。
+    <button onclick="toggle('c2_3')">訳</button>
+    <div class="en" id="c2_3">
+      <div class="romaji">Michiko: Aa, Haruka wa Amerika ni itta koto ga aru kara, Amerika no koto, yoku shitteru shi ne.</div>
+      <div>Michiko: Ah, Haruka, you've been to America, so you know a lot about America, don't you.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">はるか：</span><ruby><rb>行</rb><rt>い</rt></ruby>ったって<ruby><rb>言</rb><rt>い</rt></ruby>っても、<ruby><rb>夏休</rb><rt>なつやす</rt></ruby>みに１か月ホームステイしただけだから、そんなに<ruby><rb>知</rb><rt>し</rt></ruby>ってるってわけじゃないんだ。いろいろ<ruby><rb>調</rb><rt>しら</rt></ruby>べなくちゃいけないから、<ruby><rb>大変</rb><rt>たいへん</rt></ruby>。
+    <button onclick="toggle('c2_4')">訳</button>
+    <div class="en" id="c2_4">
+      <div class="romaji">Haruka: Itta tte itte mo, natsuyasumi ni ikkagetsu hōmusutei shita dake dakara, sonna ni shitteru tte wake ja nai n da. Iroiro shirabenakucha ikenai kara, taihen.</div>
+      <div>Haruka: Even if I say I went, I just did a one-month homestay during summer vacation, so it's not like I know that much. I have to look up a lot of things, so it's tough.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">15</div>
+  <div class="content">
+    <span class="speaker">道子：</span>あ、そう。ところで、はるかのそのカバン、おしゃれでいいねえ。
+    <button onclick="toggle('c2_5')">訳</button>
+    <div class="en" id="c2_5">
+      <div class="romaji">Michiko: A, sō. Tokorode, Haruka no sono kaban, oshare de ii nee.</div>
+      <div>Michiko: Oh, I see. By the way, that bag of yours is stylish and nice!</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">はるか：</span>ああ、これ？<ruby><rb>先週</rb><rt>せんしゅう</rt></ruby>バーゲンで<ruby><rb>買</rb><rt>か</rt></ruby>ったの。
+    <button onclick="toggle('c2_6')">訳</button>
+    <div class="en" id="c2_6">
+      <div class="romaji">Haruka: Aa, kore? Senshū bāgen de katta no.</div>
+      <div>Haruka: Oh, this? I bought it at a sale last week.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">道子：</span>えっ、バーゲン？いいなあ、その<ruby><rb>色</rb><rt>いろ</rt></ruby>。どの<ruby><rb>洋服</rb><rt>ようふく</rt></ruby>にでも<ruby><rb>合</rb><rt>あ</rt></ruby>いそうだし。
+    <button onclick="toggle('c2_7')">訳</button>
+    <div class="en" id="c2_7">
+      <div class="romaji">Michiko: E', bāgen? Ii naa, sono iro. Dono yōfuku ni demo aisō da shi.</div>
+      <div>Michiko: Eh, a sale? That's nice, that color. It looks like it would match any outfit, too.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">はるか：</span>うん。<ruby><rb>本</rb><rt>ほん</rt></ruby>もたくさん<ruby><rb>入</rb><rt>はい</rt></ruby>るから、<ruby><rb>便利</rb><rt>べんり</rt></ruby>なことは<ruby><rb>便利</rb><rt>べんり</rt></ruby>かな。でも、ちょっと<ruby><rb>重</rb><rt>おも</rt></ruby>いんだ。
+    <button onclick="toggle('c2_8')">訳</button>
+    <div class="en" id="c2_8">
+      <div class="romaji">Haruka: Un. Hon mo takusan hairu kara, benrina koto wa benri kana. Demo, chotto omoi n da.</div>
+      <div>Haruka: Yeah. It fits a lot of books, so I guess it's convenient. But, it's a little heavy.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">20</div>
+  <div class="content">
+    道子(みちこ)のそのセーターも、いいじゃない。よく似合(にあ)ってる。
+    <button onclick="toggle('c2_9')">訳</button>
+    <div class="en" id="c2_9">
+      <div class="romaji">Michiko no sono sētā mo, ii janai. Yoku niatteru.</div>
+      <div>That sweater of yours is nice, too, Michiko. It suits you well.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno"></div>
+  <div class="content">
+    <span class="speaker">道子：</span>そう？これ、<ruby><rb>姉</rb><rt>あね</rt></ruby>のなんだけど、ちょっと<ruby><rb>借</rb><rt>か</rt></ruby>りちゃった。<ruby><rb>姉</rb><rt>あね</rt></ruby>は<ruby><rb>働</rb><rt>はたら</rt></ruby>いてるから、<ruby><rb>色々</rb><rt>いろいろ</rt></ruby>な<ruby><rb>洋服</rb><rt>ようふく</rt></ruby>を持(も)ってるんだ。そのおかげで、<ruby><rb>私</rb><rt>わたし</rt></ruby>もちょっとだけおしゃれが<ruby><rb>出来</rb><rt>でき</rt></ruby>るってわけ。でも、<ruby><rb>自分</rb><rt>じぶん</rt></ruby>のじゃないから、あんまり<ruby><rb>自由</rb><rt>じゆう</rt></ruby>に<ruby><rb>着</rb><rt>き</rt></ruby>られないんだけど。
+    <button onclick="toggle('c2_10')">訳</button>
+    <div class="en" id="c2_10">
+      <div class="romaji">Michiko: Sō? Kore, ane no nan dakedo, chotto karichatta. Ane wa hataraiteru kara, iroirona yōfuku o motteru n da. Sono okage de, watashi mo chotto dake oshare ga dekiru tte wake. Demo, jibun no ja nai kara, anmari jiyū ni kirarenai n dakedo.</div>
+      <div>Michiko: Really? This is my older sister's, but I borrowed it for a bit. My sister is working, so she has various clothes. Thanks to that, I can dress up a little bit too. But since it's not mine, I can't wear it very freely.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
