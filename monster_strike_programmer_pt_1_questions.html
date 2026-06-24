@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>質問：『モンスターストライク』にプログラムを組みこむ</title>
+<style>
+  body{
+    font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    font-size:20px;
+    line-height:2.35;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  h1{ font-size:26px; margin:0 0 24px 0; border-bottom: 2px solid #ccc; padding-bottom: 8px; }
+  h2{ font-size: 22px; margin-top: 30px; margin-bottom: 16px; color: #2c3e50; }
+  ruby{ ruby-position: over; }
+  rt{ font-size:0.6em; color:#555; }
+  .sentence{ margin: 0 0 16px 0; display: flex; align-items: flex-start; }
+  .content { flex: 1; }
+  .en{
+    display:none;
+    margin-top:6px;
+    font-size:0.9em;
+    color:#333;
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .romaji {
+    color: #0056b3;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  button{
+    margin-left:10px;
+    font-size:0.8em;
+    cursor:pointer;
+    height: 30px;
+    margin-top: 8px;
+  }
+  .lineno{
+    font-weight:700;
+    width: 30px;
+    flex-shrink: 0;
+    color:#888;
+    font-size: 0.9em;
+    margin-top: 8px;
+  }
+  .options {
+    margin-top: 8px;
+    margin-left: 16px;
+  }
+</style>
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+
+<h1><ruby><rb>質問</rb><rt>しつもん</rt></ruby>（Questions）</h1>
+
+<div class="sentence">
+  <div class="lineno">1.</div>
+  <div class="content">
+    <ruby><rb>筆者</rb><rt>ひっしゃ</rt></ruby>の<ruby><rb>仕事</rb><rt>しごと</rt></ruby>として<ruby><rb>最</rb><rt>もっと</rt></ruby>も<ruby><rb>適切</rb><rt>てきせつ</rt></ruby>なものはどれですか。
+    <div class="options">
+      A. ゲームの<ruby><rb>広告</rb><rt>こうこく</rt></ruby>を<ruby><rb>作</rb><rt>つく</rt></ruby>ること<br>
+      B. キャラクターの<ruby><rb>能力</rb><rt>のうりょく</rt></ruby>や<ruby><rb>動</rb><rt>うご</rt></ruby>きを<ruby><rb>設定</rb><rt>せってい</rt></ruby>すること<br>
+      C. ゲーム<ruby><rb>機</rb><rt>き</rt></ruby>を<ruby><rb>販売</rb><rt>はんばい</rt></ruby>すること<br>
+      D. <ruby><rb>音楽</rb><rt>おんがく</rt></ruby>を<ruby><rb>作</rb><rt>つく</rt></ruby>ること
+    </div>
+    <button onclick="toggle('q1')">訳</button>
+    <div class="en" id="q1">
+      <div class="romaji">Hissha no shigoto to shite mottomo tekisetsu na mono wa dore desu ka.<br>
+      A. Gēmu no kōkoku o tsukuru koto<br>
+      B. Kyarakutā no nōryoku ya ugoki o settei suru koto<br>
+      C. Gēmu-ki o hanbai suru koto<br>
+      D. Ongaku o tsukuru koto</div>
+      <div>Which is the most appropriate description of the author's job?<br>
+      A. Making game advertisements<br>
+      B. Setting the abilities and movements of characters<br>
+      C. Selling game consoles<br>
+      D. Making music</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">2.</div>
+  <div class="content">
+    「ストライクショット」について<ruby><rb>正</rb><rt>ただ</rt></ruby>しいものはどれですか。
+    <div class="options">
+      A. <ruby><rb>仲間</rb><rt>なかま</rt></ruby>を<ruby><rb>回復</rb><rt>かいふく</rt></ruby>する<ruby><rb>技</rb><rt>わざ</rt></ruby><br>
+      B. キャラクターの<ruby><rb>必殺技</rb><rt>ひっさつわざ</rt></ruby><br>
+      C. ゲームを<ruby><rb>終了</rb><rt>しゅうりょう</rt></ruby>する<ruby><rb>機能</rb><rt>きのう</rt></ruby><br>
+      D. キャラクターを<ruby><rb>作</rb><rt>つく</rt></ruby>る<ruby><rb>道具</rb><rt>どうぐ</rt></ruby>
+    </div>
+    <button onclick="toggle('q2')">訳</button>
+    <div class="en" id="q2">
+      <div class="romaji">"Sutoraiku Shotto" ni tsuite tadashii mono wa dore desu ka.<br>
+      A. Nakama o kaifuku suru waza<br>
+      B. Kyarakutā no hissatsuwaza<br>
+      C. Gēmu o shūryō suru kinō<br>
+      D. Kyarakutā o tsukuru dōgu</div>
+      <div>Which is correct regarding the "Strike Shot"?<br>
+      A. A skill that recovers allies<br>
+      B. The character's special move<br>
+      C. A function to end the game<br>
+      D. A tool to create a character</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">3.</div>
+  <div class="content">
+    「<ruby><rb>改善</rb><rt>かいぜん</rt></ruby>」の<ruby><rb>意味</rb><rt>いみ</rt></ruby>として<ruby><rb>最</rb><rt>もっと</rt></ruby>も<ruby><rb>近</rb><rt>ちか</rt></ruby>いものを<ruby><rb>選</rb><rt>えら</rt></ruby>びなさい。
+    <div class="options">
+      A. よくすること<br>
+      B. <ruby><rb>壊</rb><rt>こわ</rt></ruby>すこと<br>
+      C. <ruby><rb>隠</rb><rt>かく</rt></ruby>すこと<br>
+      D. <ruby><rb>忘</rb><rt>わす</rt></ruby>れること
+    </div>
+    <button onclick="toggle('q3')">訳</button>
+    <div class="en" id="q3">
+      <div class="romaji">"Kaizen" no imi to shite mottomo chikai mono o erabinasai.<br>
+      A. Yoku suru koto<br>
+      B. Kowasu koto<br>
+      C. Kakusu koto<br>
+      D. Wasureru koto</div>
+      <div>Choose the closest meaning for "改善" (kaizen / improvement).<br>
+      A. Making it better<br>
+      B. Breaking it<br>
+      C. Hiding it<br>
+      D. Forgetting it</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">4.</div>
+  <div class="content">
+    <ruby><rb>筆者</rb><rt>ひっしゃ</rt></ruby>は<ruby><rb>誰</rb><rt>だれ</rt></ruby>と<ruby><rb>話</rb><rt>はな</rt></ruby>し<ruby><rb>合</rb><rt>あ</rt></ruby>いながらプログラミングを<ruby><rb>進</rb><rt>すす</rt></ruby>めますか。
+    <button onclick="toggle('q4')">訳</button>
+    <div class="en" id="q4">
+      <div class="romaji">Hissha wa dare to hanashiai nagara puroguramingu o susumemasu ka.</div>
+      <div>Who does the author discuss things with while proceeding with programming?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">5.</div>
+  <div class="content">
+    <ruby><rb>仕事</rb><rt>しごと</rt></ruby>が<ruby><rb>終</rb><rt>お</rt></ruby>わった<ruby><rb>後</rb><rt>あと</rt></ruby>に<ruby><rb>職場</rb><rt>しょくば</rt></ruby>の<ruby><rb>人達</rb><rt>ひとたち</rt></ruby>と『モンスト』を<ruby><rb>遊</rb><rt>あそ</rt></ruby>ぶ<ruby><rb>理由</rb><rt>りゆう</rt></ruby>を<ruby><rb>書</rb><rt>か</rt></ruby>きなさい。
+    <button onclick="toggle('q5')">訳</button>
+    <div class="en" id="q5">
+      <div class="romaji">Shigoto ga owatta ato ni shokuba no hitotachi to "Monsuto" o asobu riyū o kakinasai.</div>
+      <div>Write the reason why he plays "Monst" with his coworkers after work finishes.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">6.</div>
+  <div class="content">
+    <ruby><rb>筆者</rb><rt>ひっしゃ</rt></ruby>が「できないと<ruby><rb>言</rb><rt>い</rt></ruby>わないエンジニアになりたい」と<ruby><rb>考</rb><rt>かんが</rt></ruby>えるのはなぜですか。
+    <button onclick="toggle('q6')">訳</button>
+    <div class="en" id="q6">
+      <div class="romaji">Hissha ga "dekinai to iwanai enjinia ni naritai" to kangaeru no wa naze desu ka.</div>
+      <div>Why does the author want to become "an engineer who doesn't say 'I can't do it'"?</div>
+    </div>
+  </div>
+</div>
+
+<div class="sentence">
+  <div class="lineno">7.</div>
+  <div class="content">
+    ハート<ruby><rb>型</rb><rt>がた</rt></ruby>レーザーのプログラムに<ruby><rb>成功</rb><rt>せいこう</rt></ruby>したことで、<ruby><rb>筆者</rb><rt>ひっしゃ</rt></ruby>にはどのような<ruby><rb>変化</rb><rt>へんか</rt></ruby>がありましたか。
+    <button onclick="toggle('q7')">訳</button>
+    <div class="en" id="q7">
+      <div class="romaji">Hātogata rēzā no puroguramu ni seikō shita koto de, hissha ni wa dono yō na henka ga arimashita ka.</div>
+      <div>What kind of change happened to the author by succeeding in the heart-shaped laser program?</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
